@@ -587,6 +587,29 @@ let recipes = [{
             item_img: "img/potpie.png"
         }
     ],
-    chickenribs: [{item_name: 'pot pie'},{item_name: 'chicken'},{item_name: 'MINI BURGER'}]
+    chickenribs: [
+        {
+            item_name: 'WINGS & RIBS',
+            item_desc: {
+                item_ing1: {
+                    name: "Chicken Wings, Prepared",
+                    qnt: "1 OR 2 portions (10 or 20 pieces)"
+                },
+                item_ing2: {
+                    name: "Choice of Wing Sauce",
+                    qnt: "2 fl oz (60 ml) OR 4 fl oz (120 ml)"
+                },
+                item_ing3: {
+                    name: "Back Ribs",
+                    qnt: "2 x ½ Racks"
+                },
+                item_ing4: {
+                    name: "BBQ Sauce",
+                    qnt: "2 fl oz (60 ml)"
+                }
+            },
+            item_img: "img/potpie.png"
+        }
+    ]
 
 }];
