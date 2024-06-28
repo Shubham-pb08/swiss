@@ -17,6 +17,52 @@
 <body>
 
     <div class="container mt-5">
+        <div class="row">
+            <div class="col-lg-4 col-md-4">
+                <div class="card card-new px-4 py-2">
+                    <img src="img/potpie.png" alt="image"/>
+        
+                    <div class="card-new-content">
+                        <h1 class=" text-center card-new-heading">Heading</h1>
+
+                        <hr/>
+
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6">
+                                <div class="recipe-time">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 24 24" fill="none">
+                                        <path d="M12 7V12H15M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+        
+                                    <span>20 Min</span>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6 col-md-6">
+                                <div class="recipe-time">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 24 24" fill="none">
+                                        <path d="M4 19V6.2C4 5.0799 4 4.51984 4.21799 4.09202C4.40973 3.71569 4.71569 3.40973 5.09202 3.21799C5.51984 3 6.0799 3 7.2 3H16.8C17.9201 3 18.4802 3 18.908 3.21799C19.2843 3.40973 19.5903 3.71569 19.782 4.09202C20 4.51984 20 5.0799 20 6.2V17H6C4.89543 17 4 17.8954 4 19ZM4 19C4 20.1046 4.89543 21 6 21H20M9 7H15M9 11H15M19 17V21" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+        
+                                    <span>20 Min</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <p class="recipe-desc text-center">
+                            this is random lines for the description. This will be fixed later on.
+                        </p>
+
+                        <div class="recipe-btn">
+                            <div class="btn btn-success text-center">View Recipe</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-5">
     </div>
 
     <!-- Modal -->
@@ -152,7 +198,7 @@
 
             for (let a in recipes[0].entree) {
                 cardElement += `
-                <div class="card data-card col-12 col-sm-12 col-lg-4 mb-4" id="${i}" data-toggle="modal" data-target="#staticBackdrop">
+                <div class="card data-card col-12 col-sm-12 col-lg-4 mb-4" id="${a}" data-toggle="modal" data-target="#staticBackdrop">
                     <div class="card-title">${recipes[0].entree[a].item_name}</div>
                     <div class="card-body"><img width="100%" height="100%" src="${recipes[0].entree[a].item_img}" alt="${recipes[0].entree[a].item_img}" /></div>
                 </div>
@@ -161,7 +207,7 @@
                 entreeContainer.innerHTML = cardElement;
 
                 entreeContainer.addEventListener('click',(e)=> {
-                if (e.target.closest('.card').id == i) {
+                if (e.target.closest('.card').id == a) {
                         modalHeading.innerText = recipes[0].entree[a].item_name;
                         modalImage.setAttribute('src',recipes[0].entree[a].item_img);
 
@@ -180,35 +226,35 @@
                 });
             }
 
-            for (let i in recipes[0].chickenribs) {
-                cardElement += `
-                <div class="card data-card col-12 col-sm-12 col-lg-4 mb-4" id="${i}" data-toggle="modal" data-target="#staticBackdrop">
-                    <div class="card-title">${recipes[0].chickenribs[i].item_name}</div>
-                    <div class="card-body"><img width="100%" height="100%" src="${recipes[0].chickenribs[i].item_img}" alt="${recipes[0].chickenribs[i].item_img}" /></div>
-                </div>
-                `;
+            // for (let i in recipes[0].chickenribs) {
+            //     cardElement += `
+            //     <div class="card data-card col-12 col-sm-12 col-lg-4 mb-4" id="${i}" data-toggle="modal" data-target="#staticBackdrop">
+            //         <div class="card-title">${recipes[0].chickenribs[i].item_name}</div>
+            //         <div class="card-body"><img width="100%" height="100%" src="${recipes[0].chickenribs[i].item_img}" alt="${recipes[0].chickenribs[i].item_img}" /></div>
+            //     </div>
+            //     `;
 
-                chickenribsContainer.innerHTML = cardElement;
+            //     chickenribsContainer.innerHTML = cardElement;
 
-                chickenribsContainer.addEventListener('click',(e)=> {
-                if (e.target.closest('.card').id == i) {
-                        modalHeading.innerText = recipes[0].chickenribs[i].item_name;
-                        modalImage.setAttribute('src',recipes[0].chickenribs[i].item_img);
+            //     chickenribsContainer.addEventListener('click',(e)=> {
+            //     if (e.target.closest('.card').id == i) {
+            //             modalHeading.innerText = recipes[0].chickenribs[i].item_name;
+            //             modalImage.setAttribute('src',recipes[0].chickenribs[i].item_img);
 
-                        for ( let j in recipes[0].chickenribs[i].item_desc) {
-                            modalContent += 
-                            `
-                            <tr>
-                                <td>${recipes[0].chickenribs[i].item_desc[j].name}</td>
-                                <td>${recipes[0].chickenribs[i].item_desc[j].qnt}</td>
-                            </tr>
-                            `;
+            //             for ( let j in recipes[0].chickenribs[i].item_desc) {
+            //                 modalContent += 
+            //                 `
+            //                 <tr>
+            //                     <td>${recipes[0].chickenribs[i].item_desc[j].name}</td>
+            //                     <td>${recipes[0].chickenribs[i].item_desc[j].qnt}</td>
+            //                 </tr>
+            //                 `;
 
-                            tbody.innerHTML = modalContent; 
-                        }
-                    }
-                });
-            }
+            //                 tbody.innerHTML = modalContent; 
+            //             }
+            //         }
+            //     });
+            // }
 
         // container.addEventListener('click',(e)=> {
         //     for (let i in recipes[0].sbw) {
@@ -231,6 +277,8 @@
         //     }
             
         // });       
+
+
         
         
         
