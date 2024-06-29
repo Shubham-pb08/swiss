@@ -14,10 +14,6 @@
         <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
         
         <link rel="stylesheet" href="css/style.css"/>
-
-    <style>
-        
-    </style>
 </head>
 
 <body>
@@ -26,19 +22,19 @@
         <!-- main row -->
         <div class="row">
             <div class="col-lg-4 col-md-4">
-                <div class="card card-new">
-                    <div class="card-new-img-container">
+                <div class="card recipe-card" data-toggle="modal" data-target="#recipe-card_modal">
+                    <div class="recipe-card-img-container">
                         <img src="img/potpie.png" alt="image"/>
                     </div>
         
-                    <div class="card-new-content">
-                        <h1 class="card-new-heading">Strawberry Waffle</h1>
+                    <div class="recipe-card-content">
+                        <h1 class="recipe-card-heading">Strawberry Waffle</h1>
                         <hr/>
 
                         <div class="indicator-container">
                             <!-- indicator row -->
                             <div class="row">
-                                <div class="col-lg-6 col-md-6 card-new-indicators">
+                                <div class="col-lg-6 col-md-6 recipe-card-indicators">
                                     <div class="recipe-time">
                                         <!-- indicator sub-row -->
                                         <div class="row">
@@ -54,7 +50,7 @@
                                     </div>
                                 </div>
     
-                                <div class="col-lg-6 col-md-6 card-new-indicators">
+                                <div class="col-lg-6 col-md-6 recipe-card-indicators">
                                     <div class="recipe-ing">
                                         <!-- indicator sub-row -->
                                         <div class="row">
@@ -86,11 +82,34 @@
         <!-- main row ends -->
     </div>
 
+    <div class="modal fade" id="recipe-card_modal" data-backdrop="static" data-keyboard="false" tabindex="-1"
+        aria-labelledby="recipe-card_modal_label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="recipe-card_modal_label">Quarter Chicken Dinner</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                </div>
+                <div class="modal-body">
+                    <table class="table" id="datatable">
+                        <thead>
+                            <tr>
+                                <th scope="col">Ingredients</th>
+                                <th scope="col">Quantity</th>
+                            </tr>
+                        </thead>
+                        <tbody id="showdata"></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="container mt-5">
     </div>
 
     <!-- Modal -->
-    <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1"
+    <!-- <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1"
         aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
             <div class="modal-content">
@@ -99,7 +118,6 @@
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                 </div>
                 <div class="modal-body">
-                    <!-- MODAL HEADING COMES HERE -->
                     <h1 class="item-name"></h1>
 
                     <table class="table" id="datatable">
@@ -109,17 +127,13 @@
                                 <th scope="col">Quantity</th>
                             </tr>
                         </thead>
-                        <tbody id="showdata">
-                            <!-- MODAL CONTENT COMES HERE -->
-                        </tbody>
+                        <tbody id="showdata"></tbody>
                     </table>
-
-                    <!-- MODAL IMAGE COMES HERE -->
                     <img width="100%" height="300px" id="dataimg" src="" alt="">
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
     <div class="container-fluid">
         <div class="row">
@@ -192,9 +206,61 @@
 
         for (let i in recipes[0].sbw) {
                 cardElement += `
-                <div class="card data-card col-12 col-sm-12 col-lg-4 mb-4" id="${i}" data-toggle="modal" data-target="#staticBackdrop">
-                    <div class="card-title">${recipes[0].sbw[i].item_name}</div>
-                    <div class="card-body"><img width="100%" height="100%" src="${recipes[0].sbw[i].item_img}" alt="${recipes[0].sbw[i].item_img}" /></div>
+                <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+                    <div class="card recipe-card" data-toggle="modal" id="${i}" data-target="#recipe-card_modal">
+                    <div class="recipe-card-img-container">
+                        <img src="img/potpie.png" alt="image"/>
+                    </div>
+        
+                    <div class="recipe-card-content">
+                        <h1 class="recipe-card-heading">${recipes[0].sbw[i].item_name}</h1>
+                        <hr/>
+
+                        <div class="indicator-container">
+                            <!-- indicator row -->
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 recipe-card-indicators">
+                                    <div class="recipe-time">
+                                        <!-- indicator sub-row -->
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-6 col-sm-6 col-6 time-icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 24 24" fill="none"><path d="M12 7V12H15M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6 col-sm-6 col-6 time-text">
+                                                <span>20</span>
+                                            </div>
+                                        </div>
+                                        <!-- indicator sub-row ends -->
+                                        <span>Minutes</span>
+                                    </div>
+                                </div>
+    
+                                <div class="col-lg-6 col-md-6 recipe-card-indicators">
+                                    <div class="recipe-ing">
+                                        <!-- indicator sub-row -->
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-6 col-sm-6 col-6 book-icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 24 24" fill="none"><path d="M4 19V6.2C4 5.0799 4 4.51984 4.21799 4.09202C4.40973 3.71569 4.71569 3.40973 5.09202 3.21799C5.51984 3 6.0799 3 7.2 3H16.8C17.9201 3 18.4802 3 18.908 3.21799C19.2843 3.40973 19.5903 3.71569 19.782 4.09202C20 4.51984 20 5.0799 20 6.2V17H6C4.89543 17 4 17.8954 4 19ZM4 19C4 20.1046 4.89543 21 6 21H20M9 7H15M9 11H15M19 17V21" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6 col-sm-6 col-6 book-text">
+                                                <span>5</span>
+                                            </div>
+                                        </div>
+                                        <!-- indicator sub-row ends -->
+                                        <span>Ingredients</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- indicator row ends -->
+                        </div>
+
+                        <p class="recipe-desc text-center body-font">this is the random line for the description. This will be fixed later on.</p>
+
+                        <div class="recipe-btn-container">
+                            <button class="recipe-btn">View Recipe</button>
+                        </div>
+                    </div>
+                </div>
                 </div>
                 `;
 
@@ -222,7 +288,7 @@
 
             for (let a in recipes[0].entree) {
                 cardElement += `
-                <div class="card data-card col-12 col-sm-12 col-lg-4 mb-4" id="${a}" data-toggle="modal" data-target="#staticBackdrop">
+                <div class="card data-card col-12 col-sm-12 col-lg-4 mb-4" id="${a}" data-toggle="modal" data-target="#recipe-card_modal">
                     <div class="card-title">${recipes[0].entree[a].item_name}</div>
                     <div class="card-body"><img width="100%" height="100%" src="${recipes[0].entree[a].item_img}" alt="${recipes[0].entree[a].item_img}" /></div>
                 </div>

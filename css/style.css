@@ -3,83 +3,102 @@
   padding: 0px;
 }
 
-.card-new {
+.recipe-card {
   padding: 20px;
+  margin: 20px 0px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
-.card-new .card-new-img-container img {
+.recipe-card .recipe-card-img-container img {
   width: 100%;
   height: 100%;
 }
-.card-new .card-new-content {
+.recipe-card .recipe-card-content {
   padding: 20px 0px;
 }
-.card-new .card-new-content .card-new-heading {
+.recipe-card .recipe-card-content .recipe-card-heading {
   font-family: "Jost", sans-serif;
   font-weight: 400;
   font-style: normal;
   text-align: left;
   font-size: 30px;
 }
-.card-new .card-new-content .indicator-container {
+.recipe-card .recipe-card-content .indicator-container {
   margin-bottom: 10px;
 }
-.card-new .card-new-content .indicator-container .card-new-indicators {
+.recipe-card .recipe-card-content .indicator-container .recipe-card-indicators {
   font-family: "Work Sans", sans-serif;
   font-style: normal;
   color: #EE1D23;
 }
-.card-new .card-new-content .indicator-container .recipe-time, .card-new .card-new-content .indicator-container .recipe-ing {
+.recipe-card .recipe-card-content .indicator-container .recipe-time, .recipe-card .recipe-card-content .indicator-container .recipe-ing {
   line-height: 30px;
 }
-.card-new .card-new-content .indicator-container .recipe-time .row {
+.recipe-card .recipe-card-content .indicator-container .recipe-time .row {
   align-items: center;
   margin: 0px;
 }
-.card-new .card-new-content .indicator-container .recipe-time .row + span {
+.recipe-card .recipe-card-content .indicator-container .recipe-time .row + span {
   font-weight: 100px;
   font-size: 25px;
 }
-.card-new .card-new-content .indicator-container .recipe-time .row .time-icon {
+.recipe-card .recipe-card-content .indicator-container .recipe-time .row .time-icon {
   padding: 0;
   flex: 0;
 }
-.card-new .card-new-content .indicator-container .recipe-time .row .time-text {
+.recipe-card .recipe-card-content .indicator-container .recipe-time .row .time-text {
   padding: 0;
   flex: 0;
   font-size: 30px;
   padding-left: 5px;
   font-weight: bold;
 }
-.card-new .card-new-content .indicator-container .recipe-ing .row {
+.recipe-card .recipe-card-content .indicator-container .recipe-ing .row {
   align-items: center;
   margin: 0px;
 }
-.card-new .card-new-content .indicator-container .recipe-ing .row + span {
+.recipe-card .recipe-card-content .indicator-container .recipe-ing .row + span {
   font-weight: 100px;
   font-size: 25px;
 }
-.card-new .card-new-content .indicator-container .recipe-ing .row .book-icon {
+.recipe-card .recipe-card-content .indicator-container .recipe-ing .row .book-icon {
   padding: 0;
   flex: 0;
 }
-.card-new .card-new-content .indicator-container .recipe-ing .row .book-text {
+.recipe-card .recipe-card-content .indicator-container .recipe-ing .row .book-text {
   padding: 0;
   flex: 0;
   font-size: 30px;
   padding-left: 5px;
   font-weight: bold;
 }
-.card-new .card-new-content .recipe-btn-container {
+.recipe-card .recipe-card-content .recipe-btn-container {
   font-family: "Jost", sans-serif;
   font-weight: 400;
   font-style: normal;
   text-align: center;
 }
-.card-new .card-new-content .recipe-btn-container .recipe-btn {
+.recipe-card .recipe-card-content .recipe-btn-container .recipe-btn {
   width: 80%;
   border-radius: 10px;
   border: none;
   background: #EE1D23;
   color: #fff;
   padding: 10px;
+}
+
+#recipe-card_modal #recipe-card_modal .modal-content {
+  border-radius: 0px;
+}
+#recipe-card_modal #recipe-card_modal .modal-content .modal-title {
+  font-family: "Jost", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+#recipe-card_modal #datatable {
+  font-family: "Work Sans", sans-serif;
+  font-style: normal;
+}
+#recipe-card_modal #datatable thead {
+  background-color: #EE1D23;
+  color: #fff;
 }/*# sourceMappingURL=style.css.map */
