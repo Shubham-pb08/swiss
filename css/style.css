@@ -39,7 +39,7 @@
 }
 .recipe-card .recipe-card-content .indicator-container .recipe-time .row + span {
   font-weight: 100px;
-  font-size: 25px;
+  font-size: 20px;
 }
 .recipe-card .recipe-card-content .indicator-container .recipe-time .row .time-icon {
   padding: 0;
@@ -58,7 +58,7 @@
 }
 .recipe-card .recipe-card-content .indicator-container .recipe-ing .row + span {
   font-weight: 100px;
-  font-size: 25px;
+  font-size: 20px;
 }
 .recipe-card .recipe-card-content .indicator-container .recipe-ing .row .book-icon {
   padding: 0;

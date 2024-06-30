@@ -87,8 +87,8 @@
         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="recipe-card_modal_label">Quarter Chicken Dinner</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h5 class="modal-title" id="recipe-card_modal_label"></h5>
+                    <button type="button" id="closeBtn" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                 </div>
                 <div class="modal-body">
                     <table class="table" id="datatable">
@@ -98,7 +98,7 @@
                                 <th scope="col">Quantity</th>
                             </tr>
                         </thead>
-                        <tbody id="showdata"></tbody>
+                        <tbody id="show_data"></tbody>
                     </table>
                 </div>
             </div>
@@ -109,12 +109,12 @@
     </div>
 
     <!-- Modal -->
-    <!-- <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1"
-        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <!-- <div class="modal fade" id="recipe-card_modal" data-backdrop="static" data-keyboard="false" tabindex="-1"
+        aria-labelledby="recipe-card_modal_label" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+                    <h5 class="modal-title" id="recipe-card_modal_label">Modal title</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                 </div>
                 <div class="modal-body">
@@ -137,17 +137,17 @@
 
     <div class="container-fluid">
         <div class="row">
-            <div class="col-3">
+            <div class="col-12 order-1">
               <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
                 <button class="nav-link active" id="v-pills-home-tab" data-toggle="pill" data-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">Chicken & Ribs</button>
                 <button class="nav-link" id="v-pills-profile-tab" data-toggle="pill" data-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">Sandwich & Burgers</button>
                 <button class="nav-link" id="v-pills-messages-tab" data-toggle="pill" data-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">Entrees</button>
               </div>
             </div>
-            <div class="col-9">
+            <div class="col-12 order-2">
               <div class="tab-content" id="v-pills-tabContent">
                 <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
-                    <div class="container item-container sbw-container bg-success" data-id="sbw">
+                    <div class="container item-container chickenribs-container bg-success" data-id="chickenribs">
                         <div class="row bg-danger">
                 
                         </div>
@@ -163,7 +163,7 @@
                 </div>
     
                 <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
-                    <div class="container item-container chickenribs-container bg-success" data-id="chickenribs">
+                    <div class="container item-container sbw-container bg-success" data-id="sbw">
                         <div class="row bg-danger">
                 
                         </div>
@@ -179,10 +179,11 @@
 
     <script>
 
-        let tbody = document.querySelector('#showdata');
+        let showData = document.querySelector('#show_data');
         let modalImage = document.querySelector('#dataimg');
-        let modalHeading = document.querySelector('.item-name');
+        let modalHeading = document.querySelector('#recipe-card_modal_label');
         let container = document.querySelector('.item-container .row');
+        let closeBtn = document.querySelector('#closeBtn');
 
         let sbwContainer = document.querySelector('.sbw-container .row');
         let entreeContainer = document.querySelector('.entree-container .row');
@@ -190,21 +191,9 @@
 
         
         let cardElement = '';
-        let modalContent= '';
+        let recipeIngs = '';
 
-        // let containerArray = document.querySelectorAll('.item-container');
-        // currentContainerValue = currentContainer.getAttribute('data-id');
-        // for (let i in `recipes[0].${currentContainerValue}`) {
-        //         console.log(`${recipes[0]}.${currentContainerValue}${[i]}`);
-        //        cardElement += `
-        //         <div class="card data-card col-12 col-sm-12 col-lg-4 mb-4" id="${i}" data-toggle="modal" data-target="#staticBackdrop">
-        //             <div class="card-title">${recipes[0]}.${currentContainerValue}${[i]}.item_name}</div>
-        //             <div class="card-body"><img width="100%" height="100%" src="${recipes[0]}.${currentContainerValue}${[i]}.item_img}" alt="${recipes[0]}.${currentContainerValue}${[i]}.item_img}" /></div>
-        //         </div>
-        //         `; 
-        //     }
-
-        for (let i in recipes[0].sbw) {
+        for (let i in recipes[0].chickenribs) {
                 cardElement += `
                 <div class="col-12 col-sm-12 col-md-4 col-lg-4">
                     <div class="card recipe-card" data-toggle="modal" id="${i}" data-target="#recipe-card_modal">
@@ -213,7 +202,7 @@
                     </div>
         
                     <div class="recipe-card-content">
-                        <h1 class="recipe-card-heading">${recipes[0].sbw[i].item_name}</h1>
+                        <h1 class="recipe-card-heading">${recipes[0].chickenribs[i].item_name}</h1>
                         <hr/>
 
                         <div class="indicator-container">
@@ -257,122 +246,35 @@
                         <p class="recipe-desc text-center body-font">this is the random line for the description. This will be fixed later on.</p>
 
                         <div class="recipe-btn-container">
-                            <button class="recipe-btn">View Recipe</button>
+                            <button id="recipe-modal-cta" class="recipe-btn">View Recipe</button>
                         </div>
                     </div>
                 </div>
                 </div>
                 `;
 
-                sbwContainer.innerHTML = cardElement;
+                chickenribsContainer.innerHTML = cardElement;
+            }         
 
-                sbwContainer.addEventListener('click',(e)=> {
-                if (e.target.closest('.card').id == i) {
-                        modalHeading.innerText = recipes[0].sbw[i].item_name;
-                        modalImage.setAttribute('src',recipes[0].sbw[i].item_img);
-
-                        for ( let j in recipes[0].sbw[i].item_desc) {
-                            modalContent += 
-                            `
-                            <tr>
-                                <td>${recipes[0].sbw[i].item_desc[j].name}</td>
-                                <td>${recipes[0].sbw[i].item_desc[j].qnt}</td>
-                            </tr>
-                            `;
-
-                            tbody.innerHTML = modalContent; 
-                        }
-                    }
-                });
-            } 
-
-            for (let a in recipes[0].entree) {
-                cardElement += `
-                <div class="card data-card col-12 col-sm-12 col-lg-4 mb-4" id="${a}" data-toggle="modal" data-target="#recipe-card_modal">
-                    <div class="card-title">${recipes[0].entree[a].item_name}</div>
-                    <div class="card-body"><img width="100%" height="100%" src="${recipes[0].entree[a].item_img}" alt="${recipes[0].entree[a].item_img}" /></div>
-                </div>
-                `;
-
-                entreeContainer.innerHTML = cardElement;
-
-                entreeContainer.addEventListener('click',(e)=> {
-                if (e.target.closest('.card').id == a) {
-                        modalHeading.innerText = recipes[0].entree[a].item_name;
-                        modalImage.setAttribute('src',recipes[0].entree[a].item_img);
-
-                        for ( let b in recipes[0].entree[a].item_desc) {
-                            modalContent += 
-                            `
-                            <tr>
-                                <td>${recipes[0].entree[a].item_desc[b].name}</td>
-                                <td>${recipes[0].entree[a].item_desc[b].qnt}</td>
-                            </tr>
-                            `;
-
-                            tbody.innerHTML = modalContent; 
-                        }
-                    }
-                });
-            }
-
-            // for (let i in recipes[0].chickenribs) {
-            //     cardElement += `
-            //     <div class="card data-card col-12 col-sm-12 col-lg-4 mb-4" id="${i}" data-toggle="modal" data-target="#staticBackdrop">
-            //         <div class="card-title">${recipes[0].chickenribs[i].item_name}</div>
-            //         <div class="card-body"><img width="100%" height="100%" src="${recipes[0].chickenribs[i].item_img}" alt="${recipes[0].chickenribs[i].item_img}" /></div>
-            //     </div>
-            //     `;
-
-            //     chickenribsContainer.innerHTML = cardElement;
-
-            //     chickenribsContainer.addEventListener('click',(e)=> {
-            //     if (e.target.closest('.card').id == i) {
-            //             modalHeading.innerText = recipes[0].chickenribs[i].item_name;
-            //             modalImage.setAttribute('src',recipes[0].chickenribs[i].item_img);
-
-            //             for ( let j in recipes[0].chickenribs[i].item_desc) {
-            //                 modalContent += 
-            //                 `
-            //                 <tr>
-            //                     <td>${recipes[0].chickenribs[i].item_desc[j].name}</td>
-            //                     <td>${recipes[0].chickenribs[i].item_desc[j].qnt}</td>
-            //                 </tr>
-            //                 `;
-
-            //                 tbody.innerHTML = modalContent; 
-            //             }
-            //         }
-            //     });
-            // }
-
-        // container.addEventListener('click',(e)=> {
-        //     for (let i in recipes[0].sbw) {
-        //         if (e.target.closest('.card').id == i) {
-        //             modalHeading.innerText = recipes[0].sbw[i].item_name;
-        //             modalImage.setAttribute('src',recipes[0].sbw[i].item_img);
-
-        //             for ( let j in recipes[0].sbw[i].item_desc) {
-        //                 modalContent += 
-        //                 `
-        //                 <tr>
-        //                     <td>${recipes[0].sbw[i].item_desc[j].name}</td>
-        //                     <td>${recipes[0].sbw[i].item_desc[j].qnt}</td>
-        //                 </tr>
-        //                 `;
-
-        //                 tbody.innerHTML = modalContent; 
-        //             }
-        //         }
-        //     }
             
-        // });       
+            chickenribsContainer.addEventListener('click',(e)=> {
 
+                let currentCard = e.target.closest('.card').id;
 
-        
-        
-        
-        
+                modalHeading.innerHTML = recipes[0].chickenribs[currentCard].item_name;
+
+                for(let j in recipes[0].chickenribs[currentCard].item_desc) {
+                    recipeIngs += 
+                    `
+                        <tr>
+                            <td>${recipes[0].chickenribs[currentCard].item_desc[j].name}</td>
+                            <td>${recipes[0].chickenribs[currentCard].item_desc[j].qnt}</td>
+                        </tr>
+                    `;
+                }
+
+                showData.innerHTML = recipeIngs;
+            });
     </script>
 
 

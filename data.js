@@ -1,6 +1,6 @@
 let recipes = [{
 
-    sbw: [
+    chickenribs: [
         {
             item_name: 'CHICKEN GLAZING PROCEDURES',
             item_desc: {
@@ -587,7 +587,7 @@ let recipes = [{
             item_img: "img/potpie.png"
         }
     ],
-    chickenribs: [
+    sbw: [
         {
             item_name: 'WINGS & RIBS',
             item_desc: {
