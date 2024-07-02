@@ -1,6 +1,62 @@
+/* Screen Sizes */
 * {
   margin: 0px;
   padding: 0px;
+}
+
+.navbar {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.navbar .logo-container {
+  width: 70px;
+}
+.navbar .logo-container img {
+  width: 100%;
+}
+.navbar .search-button {
+  margin-left: 10px;
+  background-color: #EE1D23;
+}
+.navbar .search-button:hover {
+  background-color: #EE1D23;
+}
+.navbar .search-button:hover i {
+  color: #fff;
+}
+.navbar .search-button i {
+  color: #fff;
+}
+
+.nav {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  padding: 0px;
+}
+@media (max-width: 479px) {
+  .nav {
+    flex-direction: column;
+    margin-right: 0px;
+  }
+}
+.nav .nav-link {
+  font-family: "Jost", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-weight: bold;
+  background-color: #EE1D23;
+  color: #fff;
+  margin-right: 20px;
+}
+@media (max-width: 479px) {
+  .nav .nav-link {
+    margin-bottom: 10px;
+    margin-right: 0px;
+  }
+}
+.nav .nav-link.active {
+  background-color: transparent;
+  border: 2px solid #EE1D23;
+  color: #EE1D23;
 }
 
 .recipe-card {
