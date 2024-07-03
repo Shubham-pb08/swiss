@@ -27,12 +27,12 @@
     <!-- HEADER -->
 
     <nav class="navbar bg-body-tertiary">
-        <div class="container-fluid">
+        <div class="container-fluid navbar-container">
           <div class="logo-container">
             <img src="img/logo.svg" alt="Logo"/>
           </div>
 
-          <div class="d-flex" role="search">
+          <div class="d-flex navbar-search-container" role="search">
             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
             <button class="btn search-button" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
           </div>
@@ -84,7 +84,7 @@
                 </div>
     
                 <div class="tab-pane fade" id="v-pills-sbw" role="tabpanel" aria-labelledby="v-pills-sbw-tab">
-                    <div class="container item-container entrees-container bg-success" data-id="entree">
+                    <div class="container item-container sbw-container bg-success" data-id="sbw">
                         <div class="row bg-danger">
                 
                         </div>
@@ -92,7 +92,7 @@
                 </div>
     
                 <div class="tab-pane fade" id="v-pills-entree" role="tabpanel" aria-labelledby="v-pills-entree-tab">
-                    <div class="container item-container sbw-container bg-success" data-id="sbw">
+                    <div class="container item-container entree-container bg-success" data-id="entree">
                         <div class="row bg-danger">
                 
                         </div>
@@ -102,7 +102,6 @@
             </div>
           </div>
     </div>
-
 
     <script src="data.js" type="text/javascript"></script>
 
@@ -120,6 +119,8 @@
 
         showData.innerHTML = '';
         let cardElement = '';
+        let cardElementSBW = '';
+        let cardElementEntree = '';
         let recipeIngs = '';
 
         for (let i in recipes[0].chickenribs) {
@@ -127,7 +128,7 @@
                 <div class="col-12 col-sm-12 col-md-4 col-lg-4">
                     <div class="card recipe-card" data-toggle="modal" id="${i}" data-target="#recipe-card_modal">
                     <div class="recipe-card-img-container">
-                        <img src="img/potpie.png" alt="image"/>
+                        <img src="img/foodimages/chickenribs/${recipes[0].chickenribs[i].item_img}" alt="image"/>
                     </div>
         
                     <div class="recipe-card-content">
@@ -145,7 +146,7 @@
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 24 24" fill="none"><path d="M12 7V12H15M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
                                             </div>
                                             <div class="col-lg-6 col-md-6 col-sm-6 col-6 time-text">
-                                                <span>20</span>
+                                                <span>${recipes[0].chickenribs[i].item_line_time}</span>
                                             </div>
                                         </div>
                                         <!-- indicator sub-row ends -->
@@ -184,7 +185,7 @@
 
                 chickenribsContainer.innerHTML = cardElement;
             }         
-            
+
             chickenribsContainer.addEventListener('click',(e)=> {
                 
                 recipeIngs = '';
@@ -204,6 +205,176 @@
 
                 showData.innerHTML = recipeIngs;
             });
+
+            for (let j in recipes[0].sbw) {
+                console.log(recipes[0].sbw[j]);
+                cardElementSBW += `
+                <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+                    <div class="card recipe-card" data-toggle="modal" id="${j}" data-target="#recipe-card_modal">
+                    <div class="recipe-card-img-container">
+                        <img src="img/foodimages/sbw/${recipes[0].sbw[j].item_img}" alt="image"/>
+                    </div>
+        
+                    <div class="recipe-card-content">
+                        <h1 class="recipe-card-heading">${recipes[0].sbw[j].item_name}</h1>
+                        <hr/>
+
+                        <div class="indicator-container">
+                            <!-- indicator row -->
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-6 recipe-card-indicators">
+                                    <div class="recipe-time">
+                                        <!-- indicator sub-row -->
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-6 col-sm-6 col-6 time-icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 24 24" fill="none"><path d="M12 7V12H15M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6 col-sm-6 col-6 time-text">
+                                                <span>${recipes[0].sbw[j].item_line_time}</span>
+                                            </div>
+                                        </div>
+                                        <!-- indicator sub-row ends -->
+                                        <span>Minutes</span>
+                                    </div>
+                                </div>
+    
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-6 recipe-card-indicators">
+                                    <div class="recipe-ing">
+                                        <!-- indicator sub-row -->
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-6 col-sm-6 col-6 book-icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 24 24" fill="none"><path d="M4 19V6.2C4 5.0799 4 4.51984 4.21799 4.09202C4.40973 3.71569 4.71569 3.40973 5.09202 3.21799C5.51984 3 6.0799 3 7.2 3H16.8C17.9201 3 18.4802 3 18.908 3.21799C19.2843 3.40973 19.5903 3.71569 19.782 4.09202C20 4.51984 20 5.0799 20 6.2V17H6C4.89543 17 4 17.8954 4 19ZM4 19C4 20.1046 4.89543 21 6 21H20M9 7H15M9 11H15M19 17V21" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6 col-sm-6 col-6 book-text">
+                                                <span>${Object.keys(recipes[0].sbw[j].item_desc).length}</span>
+                                            </div>
+                                        </div>
+                                        <!-- indicator sub-row ends -->
+                                        <span>Ingredients</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- indicator row ends -->
+                        </div>
+
+                        <p class="recipe-desc text-center body-font">this is the random line for the description. This will be fixed later on.</p>
+
+                        <div class="recipe-btn-container">
+                            <button id="recipe-modal-cta" class="recipe-btn">View Recipe</button>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                `;
+
+                sbwContainer.innerHTML = cardElementSBW;
+            }   
+            
+            sbwContainer.addEventListener('click',(e)=> {
+                
+                recipeIngs = '';
+                let currentCard = e.target.closest('.card').id;
+
+                modalHeading.innerHTML = recipes[0].sbw[currentCard].item_name;
+
+                for(let j in recipes[0].sbw[currentCard].item_desc) {
+                    recipeIngs += 
+                    `
+                        <tr>
+                            <td>${recipes[0].sbw[currentCard].item_desc[j].name}</td>
+                            <td>${recipes[0].sbw[currentCard].item_desc[j].qnt}</td>
+                        </tr>
+                    `;
+                }
+
+                showData.innerHTML = recipeIngs;
+            });
+
+
+            for (let k in recipes[0].entree) {
+
+                cardElementEntree += `
+                <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+                    <div class="card recipe-card" data-toggle="modal" id="${k}" data-target="#recipe-card_modal">
+                    <div class="recipe-card-img-container">
+                        <img src="img/foodimages/entree/${recipes[0].entree[k].item_img}" alt="image"/>
+                    </div>
+        
+                    <div class="recipe-card-content">
+                        <h1 class="recipe-card-heading">${recipes[0].entree[k].item_name}</h1>
+                        <hr/>
+
+                        <div class="indicator-container">
+                            <!-- indicator row -->
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-6 recipe-card-indicators">
+                                    <div class="recipe-time">
+                                        <!-- indicator sub-row -->
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-6 col-sm-6 col-6 time-icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 24 24" fill="none"><path d="M12 7V12H15M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6 col-sm-6 col-6 time-text">
+                                                <span>${recipes[0].entree[k].item_line_time}</span>
+                                            </div>
+                                        </div>
+                                        <!-- indicator sub-row ends -->
+                                        <span>Minutes</span>
+                                    </div>
+                                </div>
+    
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-6 recipe-card-indicators">
+                                    <div class="recipe-ing">
+                                        <!-- indicator sub-row -->
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-6 col-sm-6 col-6 book-icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 24 24" fill="none"><path d="M4 19V6.2C4 5.0799 4 4.51984 4.21799 4.09202C4.40973 3.71569 4.71569 3.40973 5.09202 3.21799C5.51984 3 6.0799 3 7.2 3H16.8C17.9201 3 18.4802 3 18.908 3.21799C19.2843 3.40973 19.5903 3.71569 19.782 4.09202C20 4.51984 20 5.0799 20 6.2V17H6C4.89543 17 4 17.8954 4 19ZM4 19C4 20.1046 4.89543 21 6 21H20M9 7H15M9 11H15M19 17V21" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6 col-sm-6 col-6 book-text">
+                                                <span>${Object.keys(recipes[0].entree[k].item_desc).length}</span>
+                                            </div>
+                                        </div>
+                                        <!-- indicator sub-row ends -->
+                                        <span>Ingredients</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- indicator row ends -->
+                        </div>
+
+                        <p class="recipe-desc text-center body-font">this is the random line for the description. This will be fixed later on.</p>
+
+                        <div class="recipe-btn-container">
+                            <button id="recipe-modal-cta" class="recipe-btn">View Recipe</button>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                `;
+
+                entreeContainer.innerHTML = cardElementEntree;
+            } 
+
+            entreeContainer.addEventListener('click',(e)=> {
+                
+                recipeIngs = '';
+                let currentCard = e.target.closest('.card').id;
+
+                modalHeading.innerHTML = recipes[0].entree[currentCard].item_name;
+
+                for(let j in recipes[0].entree[currentCard].item_desc) {
+                    recipeIngs += 
+                    `
+                        <tr>
+                            <td>${recipes[0].entree[currentCard].item_desc[j].name}</td>
+                            <td>${recipes[0].entree[currentCard].item_desc[j].qnt}</td>
+                        </tr>
+                    `;
+                }
+
+                showData.innerHTML = recipeIngs;
+            });
+            
     </script>
 
 
