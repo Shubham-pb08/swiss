@@ -649,7 +649,7 @@ let recipes = [{
                     name: "Pickle Spear",
                     qnt: "1 each"
                 },
-                item_ing5: {
+                item_ing4: {
                     name: "Chalet Sauce",
                     qnt: "4 fl oz (120 ml)"
                 }
@@ -672,7 +672,7 @@ let recipes = [{
                     name: "Side Choice x2",
                     qnt: "2 portions"
                 },
-                item_ing3: {
+                item_ing4: {
                     name: "Hot Gravy",
                     qnt: "6 fl oz (180 ml)"
                 },
@@ -699,7 +699,7 @@ let recipes = [{
                     name: "Mayonnaise",
                     qnt: "10 ml (tsp on bottom and top of bun)"
                 },
-                item_ing3: {
+                item_ing4: {
                     name: "Burger Garnish, prepped",
                     qnt: "1 portion"
                 },
@@ -707,19 +707,19 @@ let recipes = [{
                     name: "Pickle Spear",
                     qnt: "1 each"
                 },
-                item_ing5: {
+                item_ing6: {
                     name: "Side Choice",
                     qnt: "1 portion"
                 },
-                item_ing5: {
+                item_ing7: {
                     name: "Chalet Sauce (If ordered with fries)",
                     qnt: "4 fl oz (120 ml)"
                 },
-                item_ing5: {
+                item_ing8: {
                     name: "Cheddar Cheese, slice",
                     qnt: "1 each"
                 },
-                item_ing5: {
+                item_ing9: {
                     name: "Bacon Slices",
                     qnt: "2 slices"
                 }
@@ -742,7 +742,7 @@ let recipes = [{
                     name: "Mayonnaise",
                     qnt: "10 ml (tsp on bottom and top of bun)"
                 },
-                item_ing3: {
+                item_ing4: {
                     name: "Burger Garnish, prepped",
                     qnt: "1 portion"
                 },
@@ -750,11 +750,11 @@ let recipes = [{
                     name: "Pickle Spear",
                     qnt: "1 each"
                 },
-                item_ing5: {
+                item_ing6: {
                     name: "Side Choice",
                     qnt: "1 portion"
                 },
-                item_ing5: {
+                item_ing7: {
                     name: "Chalet Sauce (If ordered with fries)",
                     qnt: "4 fl oz (120 ml)"
                 }
@@ -781,7 +781,7 @@ let recipes = [{
                     name: "Bacon, slices",
                     qnt: "2 slices"
                 },
-                item_ing5: {
+                item_ing4: {
                     name: "Coleslaw, prepared",
                     qnt: "1 oz (28 g)"
                 },
@@ -789,11 +789,11 @@ let recipes = [{
                     name: "Side Choice",
                     qnt: "1 portion"
                 },
-                item_ing5: {
+                item_ing6: {
                     name: "Pickle Spear ",
                     qnt: "1 each"
                 },
-                item_ing5: {
+                item_ing7: {
                     name: "Chalet Sauce",
                     qnt: "4 fl oz (120 ml)"
                 }
@@ -816,7 +816,7 @@ let recipes = [{
                     name: "Ace Bun",
                     qnt: "1 each"
                 },
-                item_ing5: {
+                item_ing4: {
                     name: "Coleslaw, prepared",
                     qnt: "1 oz (28 g)"
                 },
@@ -824,11 +824,11 @@ let recipes = [{
                     name: "Side Choice",
                     qnt: "1 portion"
                 },
-                item_ing5: {
+                item_ing6: {
                     name: "Pickle Spear ",
                     qnt: "1 each"
                 },
-                item_ing5: {
+                item_ing7: {
                     name: "Chalet Sauce",
                     qnt: "4 fl oz (120 ml)"
                 }
@@ -851,7 +851,7 @@ let recipes = [{
                     name: "Ace Bun",
                     qnt: "1 each"
                 },
-                item_ing5: {
+                item_ing4: {
                     name: "Coleslaw, prepared",
                     qnt: "1 oz (28 g)"
                 },
@@ -859,11 +859,11 @@ let recipes = [{
                     name: "Side Choice",
                     qnt: "1 portion"
                 },
-                item_ing5: {
+                item_ing6: {
                     name: "Pickle Spear ",
                     qnt: "1 each"
                 },
-                item_ing5: {
+                item_ing7: {
                     name: "Chalet Sauce",
                     qnt: "4 fl oz (120 ml)"
                 }
@@ -886,7 +886,7 @@ let recipes = [{
                     name: "Ace Bun",
                     qnt: "1 each"
                 },
-                item_ing5: {
+                item_ing4: {
                     name: "Coleslaw, prepared",
                     qnt: "1 oz (28 g)"
                 },
@@ -894,22 +894,333 @@ let recipes = [{
                     name: "Side Choice",
                     qnt: "1 portion"
                 },
-                item_ing5: {
+                item_ing6: {
                     name: "Pickle Spear ",
                     qnt: "1 each"
                 },
-                item_ing5: {
+                item_ing7: {
                     name: "Chalet Sauce",
                     qnt: "4 fl oz (120 ml)"
                 },
-                item_ing5: {
+                item_ing8: {
                     name: "Hot Wing Sauce",
                     qnt: "2 fl oz"
                 }
             },
             item_img: "crispy-sandwich-spicy-chalet.png",
             item_line_time: "9"
+        }
+    ],
+    kids: [
+        {
+            item_name: 'KIDS’ ¼ CHICKEN DINNER DARK',
+            item_desc: {
+                item_ing1: {
+                    name: "Quarter Chicken",
+                    qnt: "1 leg"
+                },
+                item_ing2: {
+                    name: "Side Choice ",
+                    qnt: "Fries 6 oz (170 g) OR 1 Side Choice"
+                },
+                item_ing3: {
+                    name: "Chalet Sauce",
+                    qnt: "4 fl oz (120 ml)"
+                }
+            },
+            item_img: "hot-chicken-sandwich.png",
+            item_line_time: "2"
+        },
+        {
+            item_name: 'KIDS’¼ CHICKEN DINNER WHITE',
+            item_desc: {
+                item_ing1: {
+                    name: "Quarter Chicken",
+                    qnt: "1 breast"
+                },
+                item_ing2: {
+                    name: "Side Choice ",
+                    qnt: "Fries 6 oz (170 g) OR 1 Side Choice"
+                },
+                item_ing3: {
+                    name: "Chalet Sauce",
+                    qnt: "4 fl oz (120 ml)"
+                }
+            },
+            item_img: "hot-chicken-sandwich.png",
+            item_line_time: "2"
+        },
+        {
+            item_name: 'KIDS’ CHICKEN TENDERZ & DIP',
+            item_desc: {
+                item_ing1: {
+                    name: "Chicken tenders",
+                    qnt: "3 pieces "
+                },
+                item_ing2: {
+                    name: "Plum Sauce ",
+                    qnt: "1 fl oz (30 ml)"
+                },
+                item_ing3: {
+                    name: "Side Choice",
+                    qnt: "Fries 6 oz (170 g) OR 1 Side Choice"
+                },
+                item_ing4: {
+                    name: "Side Choice",
+                    qnt: "Fries 6 oz (170 g) OR 1 Side Choice"
+                }
+            },
+            item_img: "hot-chicken-sandwich.png",
+            item_line_time: "7"
+        },
+        {
+            item_name: 'KIDS’ CHEEZY PIZZA DINNER',
+            item_desc: {
+                item_ing1: {
+                    name: "Cheese Pizza ",
+                    qnt: "1 each"
+                },
+                item_ing2: {
+                    name: "Side Choice",
+                    qnt: "Fries 6 oz (170 g) OR 1 Side Choice"
+                },
+                item_ing3: {
+                    name: "Chalet Sauce",
+                    qnt: "4 fl oz (120 ml)"
+                }
+            },
+            item_img: "hot-chicken-sandwich.png",
+            item_line_time: "8"
+        },
+        {
+            item_name: 'KIDS’ MIGHTY MAC N’ CHEEZ BALLS',
+            item_desc: {
+                item_ing1: {
+                    name: "Mac N Cheese Balls",
+                    qnt: "4 pieces"
+                },
+                item_ing2: {
+                    name: "Ketchup",
+                    qnt: "1 fl oz (30 ml)"
+                },
+                item_ing3: {
+                    name: "Side Choice",
+                    qnt: "Fries 6 oz (170 g) OR 1 Side Choice"
+                }
+            },
+            item_img: "hot-chicken-sandwich.png",
+            item_line_time: "7"
+        },
+        {
+            item_name: 'KIDS’ CHALET CHEEZY BURGER DINNER',
+            item_desc: {
+                item_ing1: {
+                    name: "Junior Burger Patty",
+                    qnt: "2 each"
+                },
+                item_ing2: {
+                    name: "Junior Burger Bun",
+                    qnt: "1 each"
+                },
+                item_ing3: {
+                    name: "Side Fries or Side Choice",
+                    qnt: "Fries 6 oz (170 g) OR 1 Side Choice"
+                },
+                item_ing4: {
+                    name: "Chalet Sauce",
+                    qnt: "4 fl oz (120 ml)"
+                },
+                item_ing5: {
+                    name: "Cheddar Cheese, slice",
+                    qnt: "1 slice"
+                }
+            },
+            item_img: "hot-chicken-sandwich.png",
+            item_line_time: "7"
         },
     ]
-
 }];
+
+let prep = [
+    {
+        item_name: 'Ace Bun',
+        item_desc: {
+            item_ing1: {
+                name: "Ace Bun",
+                qnt: "As Needed"
+            },
+            item_ing2: {
+                name: "Freezer holding temp",
+                qnt: "-18°C (0°F) or Lower"
+            },
+            item_ing3: {
+                name: "Walk-in cooler temp",
+                qnt: "0°C (32°F) to 4°C (40°F)"
+            },
+            item_ing4: {
+                name: "Side Fries or Side Choice",
+                qnt: "Fries 6 oz (170 g) OR 1 Side Choice"
+            },
+            item_ing5: {
+                name: "Shelf life",
+                qnt: "2 Days From Frozen"
+            }
+        },
+        item_img: "hot-chicken-sandwich.png",
+        item_line_time: "0.5"
+    },
+    {
+        item_name: 'BACON CHIPS, CRISPY',
+        item_desc: {
+            item_ing1: {
+                name: "Bacon Chips, thawed",
+                qnt: "As Needed"
+            },
+            item_ing2: {
+                name: "Freezer holding temp",
+                qnt: "-18°C (0°F) or Lower"
+            },
+            item_ing3: {
+                name: "Walk-in cooler temp",
+                qnt: "0°C (32°F) to 4°C (40°F)"
+            },
+            item_ing4: {
+                name: "Rational Temp",
+                qnt: "218°C (425°F)"
+            },
+            item_ing5: {
+                name: "Internal cooking temp",
+                qnt: "70°C (158°F)"
+            },
+            item_ing6: {
+                name: "Shelf Life",
+                qnt: "6 Days from Frozen"
+            }
+        },
+        item_img: "hot-chicken-sandwich.png",
+        item_line_time: "2"
+    },
+    {
+        item_name: 'BACON STRIPS',
+        item_desc: {
+            item_ing1: {
+                name: "Bacon Slice, thawed",
+                qnt: "As Needed"
+            },
+            item_ing2: {
+                name: "Freezer holding temp",
+                qnt: "-18°C (0°F) or Lower"
+            },
+            item_ing3: {
+                name: "Walk-in cooler temp",
+                qnt: "0°C (32°F) to 4°C (40°F)"
+            },
+            item_ing4: {
+                name: "Rational Temp",
+                qnt: "218°C (425°F)"
+            },
+            item_ing5: {
+                name: "Internal cooking temp",
+                qnt: "70°C (158°F)"
+            },
+            item_ing6: {
+                name: "Shelf Life",
+                qnt: "4 Days from Frozen"
+            }
+        },
+        item_img: "hot-chicken-sandwich.png",
+        item_line_time: "2"
+    },
+    {
+        item_name: 'RED BELL PEPPERS, SLICED',
+        item_desc: {
+            item_ing1: {
+                name: "Red Bell Peppers",
+                qnt: "As Needed"
+            },
+            item_ing2: {
+                name: "Walk-in cooler temp",
+                qnt: "0°C (32°F) to 4°C (40°F)"
+            },
+            item_ing3: {
+                name: "Shelf Life",
+                qnt: "3 Days"
+            }
+        },
+        item_img: "hot-chicken-sandwich.png",
+        item_line_time: "0"
+    },
+    {
+        item_name: 'BROCCOLI FLORETS',
+        item_desc: {
+            item_ing1: {
+                name: "Broccoli",
+                qnt: "As Needed"
+            },
+            item_ing2: {
+                name: "Walk-in cooler temp",
+                qnt: "0°C (32°F) to 4°C (40°F)"
+            },
+            item_ing3: {
+                name: "Shelf Life",
+                qnt: "3 Days"
+            }
+        },
+        item_img: "hot-chicken-sandwich.png",
+        item_line_time: "0"
+    },
+    {
+        item_name: 'BURGERS THAWING',
+        item_desc: {
+            item_ing1: {
+                name: "Burger OR Veggie Burger",
+                qnt: "As Needed"
+            },
+            item_ing2: {
+                name: "Freezer Holding Temp",
+                qnt: "-18°C (0°F) or Lower"
+            },
+            item_ing3: {
+                name: "Shelf Life",
+                qnt: "4 Days"
+            }
+        },
+        item_img: "hot-chicken-sandwich.png",
+        item_line_time: "0"
+    },
+    {
+        item_name: 'BURGER GARNISH',
+        item_desc: {
+            item_ing1: {
+                name: "Pickle Spear",
+                qnt: "1 piece"
+            },
+            item_ing2: {
+                name: "Red Onion Rings, prepped",
+                qnt: "3 rings (15 g)"
+            },
+            item_ing3: {
+                name: "Roma Tomato,sliced prepped",
+                qnt: "2 slices (25 g)"
+            },
+            item_ing4: {
+                name: "Leaf Lettuce, prepped",
+                qnt: "1 leaf (14 g)"
+            },
+            item_ing5: {
+                name: "Yield",
+                qnt: "1 Portion"
+            },
+            item_ing6: {
+                name: "Walk-in cooler Temp",
+                qnt: "0°C (32°F) to 4°C(40°F)"
+            },
+            item_ing7: {
+                name: "Shelf Life",
+                qnt: "1 Day"
+            }
+        },
+        item_img: "hot-chicken-sandwich.png",
+        item_line_time: "0"
+    },
+]

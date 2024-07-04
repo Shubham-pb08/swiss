@@ -71,6 +71,7 @@
                 <button class="nav-link active" id="v-pills-chickenribs-tab" data-toggle="pill" data-target="#v-pills-chickenribs" type="button" role="tab" aria-controls="v-pills-chickenribs" aria-selected="true">Chicken & Ribs</button>
                 <button class="nav-link" id="v-pills-sbw-tab" data-toggle="pill" data-target="#v-pills-sbw" type="button" role="tab" aria-controls="v-pills-sbw" aria-selected="false">Sandwich & Burgers</button>
                 <button class="nav-link" id="v-pills-entree-tab" data-toggle="pill" data-target="#v-pills-entree" type="button" role="tab" aria-controls="v-pills-entree" aria-selected="false">Entrees</button>
+                <button class="nav-link" id="v-pills-kids-tab" data-toggle="pill" data-target="#v-pills-kids" type="button" role="tab" aria-controls="v-pills-kids" aria-selected="false">Kids</button>
               </div>
             </div>
             <div class="col-12 order-2">
@@ -98,6 +99,14 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="tab-pane fade" id="v-pills-kids" role="tabpanel" aria-labelledby="v-pills-kids-tab">
+                    <div class="container item-container kids-container bg-success" data-id="kids">
+                        <div class="row bg-danger">
+                
+                        </div>
+                    </div>
+                </div>
               </div>
             </div>
           </div>
@@ -116,11 +125,13 @@
         let sbwContainer = document.querySelector('.sbw-container .row');
         let entreeContainer = document.querySelector('.entree-container .row');
         let chickenribsContainer = document.querySelector('.chickenribs-container .row');
+        let kidsContainer = document.querySelector('.kids-container .row');
 
         showData.innerHTML = '';
         let cardElement = '';
         let cardElementSBW = '';
         let cardElementEntree = '';
+        let cardElementKids = '';
         let recipeIngs = '';
 
         for (let i in recipes[0].chickenribs) {
@@ -374,6 +385,70 @@
 
                 showData.innerHTML = recipeIngs;
             });
+
+            for (let l in recipes[0].kids) {
+
+                cardElementKids += `
+                <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+                    <div class="card recipe-card" data-toggle="modal" id="${l}" data-target="#recipe-card_modal">
+                    <div class="recipe-card-img-container">
+                        <img src="img/foodimages/entree/${recipes[0].kids[l].item_img}" alt="image"/>
+                    </div>
+        
+                    <div class="recipe-card-content">
+                        <h1 class="recipe-card-heading">${recipes[0].kids[l].item_name}</h1>
+                        <hr/>
+
+                        <div class="indicator-container">
+                            <!-- indicator row -->
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-6 recipe-card-indicators">
+                                    <div class="recipe-time">
+                                        <!-- indicator sub-row -->
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-6 col-sm-6 col-6 time-icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 24 24" fill="none"><path d="M12 7V12H15M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6 col-sm-6 col-6 time-text">
+                                                <span>${recipes[0].kids[l].item_line_time}</span>
+                                            </div>
+                                        </div>
+                                        <!-- indicator sub-row ends -->
+                                        <span>Minutes</span>
+                                    </div>
+                                </div>
+    
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-6 recipe-card-indicators">
+                                    <div class="recipe-ing">
+                                        <!-- indicator sub-row -->
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-6 col-sm-6 col-6 book-icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 24 24" fill="none"><path d="M4 19V6.2C4 5.0799 4 4.51984 4.21799 4.09202C4.40973 3.71569 4.71569 3.40973 5.09202 3.21799C5.51984 3 6.0799 3 7.2 3H16.8C17.9201 3 18.4802 3 18.908 3.21799C19.2843 3.40973 19.5903 3.71569 19.782 4.09202C20 4.51984 20 5.0799 20 6.2V17H6C4.89543 17 4 17.8954 4 19ZM4 19C4 20.1046 4.89543 21 6 21H20M9 7H15M9 11H15M19 17V21" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6 col-sm-6 col-6 book-text">
+                                                <span>${Object.keys(recipes[0].kids[l].item_desc).length}</span>
+                                            </div>
+                                        </div>
+                                        <!-- indicator sub-row ends -->
+                                        <span>Ingredients</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- indicator row ends -->
+                        </div>
+
+                        <p class="recipe-desc text-center body-font">this is the random line for the description. This will be fixed later on.</p>
+
+                        <div class="recipe-btn-container">
+                            <button id="recipe-modal-cta" class="recipe-btn">View Recipe</button>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                `;
+
+                kidsContainer.innerHTML = cardElementKids;
+            } 
             
     </script>
 
