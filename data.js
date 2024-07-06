@@ -1223,4 +1223,249 @@ let prep = [
         item_img: "hot-chicken-sandwich.png",
         item_line_time: "0"
     },
+    {
+        item_name: 'CABBAGE SHREDDING',
+        item_desc: {
+            item_ing1: {
+                name: "Cabbage, Red or Green",
+                qnt: "As Needed"
+            },
+            item_ing2: {
+                name: "Walk-in cooler Temp",
+                qnt: "0°C (32°F) to 4°C(40°F)"
+            },
+            item_ing3: {
+                name: "Shelf Life",
+                qnt: "2 Days"
+            }
+        },
+        item_img: "hot-chicken-sandwich.png",
+        item_line_time: "0"
+    },
+    {
+        item_name: 'CARROT JULIENNED',
+        item_desc: {
+            item_ing1: {
+                name: "Carrots",
+                qnt: "As Needed"
+            },
+            item_ing2: {
+                name: "Walk-in cooler Temp",
+                qnt: "0°C (32°F) to 4°C(40°F)"
+            },
+            item_ing3: {
+                name: "Shelf Life",
+                qnt: "3 Days"
+            }
+        },
+        item_img: "hot-chicken-sandwich.png",
+        item_line_time: "0"
+    },
+    {
+        item_name: 'CARROT STICKS',
+        item_desc: {
+            item_ing1: {
+                name: "Carrots",
+                qnt: "As Needed"
+            },
+            item_ing2: {
+                name: "Walk-in cooler Temp",
+                qnt: "0°C (32°F) to 4°C(40°F)"
+            },
+            item_ing3: {
+                name: "Shelf Life",
+                qnt: "3 Days"
+            }
+        },
+        item_img: "hot-chicken-sandwich.png",
+        item_line_time: "0"
+    },
+    {
+        item_name: 'CAULIFLOWER FLORETS',
+        item_desc: {
+            item_ing1: {
+                name: "Cauliflower Florets",
+                qnt: "As Needed"
+            },
+            item_ing2: {
+                name: "Walk-in cooler Temp",
+                qnt: "0°C (32°F) to 4°C(40°F)"
+            },
+            item_ing3: {
+                name: "Shelf Life",
+                qnt: "3 Days"
+            }
+        },
+        item_img: "hot-chicken-sandwich.png",
+        item_line_time: "0"
+    },
+    {
+        item_name: 'CAESAR SALAD, PORTION PACK',
+        item_desc: {
+            item_ing1: {
+                name: "Romaine, Chopped",
+                qnt: "3.5 oz (98g)"
+            },
+            item_ing2: {
+                name: "Fridge Temp",
+                qnt: "0°C (32°F) to 4°C (40°F)"
+            },
+            item_ing3: {
+                name: "Shelf Life",
+                qnt: "2 Days"
+            }
+        },
+        item_img: "hot-chicken-sandwich.png",
+        item_line_time: "0"
+    },
+    {
+        item_name: 'CELERY STICKS',
+        item_desc: {
+            item_ing1: {
+                name: "Celery",
+                qnt: "As Needed"
+            },
+            item_ing2: {
+                name: "Walk-in cooler Temp",
+                qnt: "0°C (32°F) to 4°C (40°F)"
+            },
+            item_ing3: {
+                name: "Shelf Life",
+                qnt: "3 Days"
+            }
+        },
+        item_img: "hot-chicken-sandwich.png",
+        item_line_time: "0"
+    },
+    {
+        item_name: 'CHALET SEASONED MAYONNAISE',
+        item_desc: {
+            item_ing1: {
+                name: "Chalet Shake on Seasoning",
+                qnt: "78 g"
+            },
+            item_ing2: {
+                name: "Mayonnaise",
+                qnt: "500 g"
+            },
+            item_ing3: {
+                name: "Yield",
+                qnt: "18 fl oz"
+            },
+            item_ing4: {
+                name: "Walk-In cooler Temp",
+                qnt: "0°C (32°F) to 4°C (40°F)"
+            },
+            item_ing5: {
+                name: "Shelf Life",
+                qnt: "5 Days"
+            }
+        },
+        item_img: "hot-chicken-sandwich.png",
+        item_line_time: "0"
+    },
+    {
+        item_name: 'SWISS / CHEDDAR SLICES',
+        item_desc: {
+            item_ing1: {
+                name: "Cheese Slices",
+                qnt: "As Needed"
+            },
+            item_ing2: {
+                name: "Walk-in cooler Temp",
+                qnt: "0°C (32°F) to 4°C(40°F)"
+            },
+            item_ing3: {
+                name: "Shelf Life",
+                qnt: "3 Days Once Opened"
+            }
+        },
+        item_img: "hot-chicken-sandwich.png",
+        item_line_time: "0"
+    },
+    {
+        item_name: 'GARLIC CHEESE LOAF THAWING',
+        item_desc: {
+            item_ing1: {
+                name: "Bakerhaus Loaf",
+                qnt: "As Needed"
+            },
+            item_ing2: {
+                name: "Freezer holding temp",
+                qnt: "-18°C (0°F) or Lower"
+            },
+            item_ing3: {
+                name: "Walk-in cooler temp",
+                qnt: "0°C (32°F) to 4°C (40°F)"
+            },
+            item_ing4: {
+                name: "Shelf life",
+                qnt: "3 days from frozen"
+            }
+        },
+        item_img: "hot-chicken-sandwich.png",
+        item_line_time: "0"
+    },
+    {
+        item_name: 'GARLIC CHEESE LOAF',
+        item_desc: {
+            item_ing1: {
+                name: "Bakerhaus loaf, thawed",
+                qnt: "1 each"
+            },
+            item_ing2: {
+                name: "Cheese Shred Pub Mix",
+                qnt: "2 oz (56 g)"
+            },
+            item_ing3: {
+                name: "Garlic Spread",
+                qnt: "0.7 oz (20 g)"
+            },
+            item_ing4: {
+                name: "Yield",
+                qnt: "1 loaf"
+            },
+            item_ing5: {
+                name: "Walk-in cooler Temp",
+                qnt: "0°C (32°F) to 4°C (40°F)"
+            },
+            item_ing6: {
+                name: "Shelf Life",
+                qnt: "3 Days from frozen"
+            }
+        },
+        item_img: "hot-chicken-sandwich.png",
+        item_line_time: "0"
+    },
+    {
+        item_name: 'CHICKEN - PEELED MEAT PACK',
+        item_desc: {
+            item_ing1: {
+                name: "Peeled Meat",
+                qnt: "4 oz (114 g) Portion (Stir fry pack) 2 oz (56 g) Portion (Chicken Poutine pack)"
+            },
+            item_ing2: {
+                name: "Walk-in cooler Temp",
+                qnt: "0°C (32°F) to 4°C(40°F)"
+            },
+            item_ing3: {
+                name: "Shelf Life",
+                qnt: "Follow expiry of Peeled meat being used"
+            },
+            item_ing4: {
+                name: "Yield",
+                qnt: "1 loaf"
+            },
+            item_ing5: {
+                name: "Walk-in cooler Temp",
+                qnt: "0°C (32°F) to 4°C (40°F)"
+            },
+            item_ing6: {
+                name: "Shelf Life",
+                qnt: "3 Days from frozen"
+            }
+        },
+        item_img: "hot-chicken-sandwich.png",
+        item_line_time: "0"
+    },
 ]
