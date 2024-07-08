@@ -1468,4 +1468,465 @@ let prep = [
         item_img: "hot-chicken-sandwich.png",
         item_line_time: "0"
     },
+    {
+        item_name: 'CHICKEN - PEELED WHITE MEAT PACK FOR SALAD',
+        item_desc: {
+            item_ing1: {
+                name: "Peeled White Meat",
+                qnt: "4 .5 oz (128 g) Portion"
+            },
+            item_ing2: {
+                name: "Walk-in cooler Temp",
+                qnt: "0°C (32°F) to 4°C(40°F)"
+            },
+            item_ing3: {
+                name: "Shelf Life",
+                qnt: "Follow expiry of Peeled meat being used"
+            }
+        },
+        item_img: "hot-chicken-sandwich.png",
+        item_line_time: "0"
+    },
+    {
+        item_name: 'CHICKEN CLUB WRAP',
+        item_desc: {
+            item_ing1: {
+                name: "12” Tortilla Shell",
+                qnt: "1 each"
+            },
+            item_ing2: {
+                name: "Leaf Lettuce",
+                qnt: "1 oz ( 1 large leaf or 2 small pieces)"
+            },
+            item_ing3: {
+                name: "Roma Tomatoes",
+                qnt: "3 slices"
+            },
+            item_ing4: {
+                name: "Swiss Cheese",
+                qnt: "2 full slices"
+            },
+            item_ing5: {
+                name: "Peeled Rotisserie Chicken, white or dark ",
+                qnt: "3 oz (84 g)"
+            },
+            item_ing6: {
+                name: "Garlic Mesquite Mayonnaise",
+                qnt: "1 fl oz (28 ml)"
+            },
+            item_ing7: {
+                name: "Bacon, cooked",
+                qnt: "2 strips"
+            },
+            item_ing8: {
+                name: "Walk-in cooler Temp",
+                qnt: "0°C (32°F) to 4°C (40°F)"
+            },
+            item_ing9: {
+                name: "Line Drawer Temp",
+                qnt: "0°C (32°F) to 4°C(40°F)"
+            },
+            item_ing10: {
+                name: "SHELF LIFE",
+                qnt: "1 Day"
+            },
+        },
+        item_img: "hot-chicken-sandwich.png",
+        item_line_time: "0"
+    },
+    {
+        item_name: 'COLESLAW',
+        item_desc: {
+            item_ing1: {
+                name: "Green Cabbage,Shredded",
+                qnt: "4 lbs (1.81 kg)"
+            },
+            item_ing2: {
+                name: "Carrots, Julienned",
+                qnt: "0.5 lbs (226 g) "
+            },
+            item_ing3: {
+                name: "Coleslaw Dressing",
+                qnt: "22 fl oz (0.65 L)"
+            },
+            item_ing4: {
+                name: "Walk-in cooler Temp",
+                qnt: "0°C (32°F) to 4°C (40°F)"
+            },
+            item_ing5: {
+                name: "SHELF LIFE",
+                qnt: "1 Day"
+            },
+        },
+        item_img: "hot-chicken-sandwich.png",
+        item_line_time: "0"
+    },
+    {
+        item_name: 'COLESLAW',
+        item_desc: {
+            item_ing1: {
+                name: "Green Cabbage,Shredded",
+                qnt: "4 lbs (1.81 kg)"
+            },
+            item_ing2: {
+                name: "Carrots, Julienned",
+                qnt: "0.5 lbs (226 g) "
+            },
+            item_ing3: {
+                name: "Coleslaw Dressing",
+                qnt: "22 fl oz (0.65 L)"
+            },
+            item_ing4: {
+                name: "Walk-in cooler Temp",
+                qnt: "0°C (32°F) to 4°C (40°F)"
+            },
+            item_ing5: {
+                name: "SHELF LIFE",
+                qnt: "1 Day"
+            },
+        },
+        item_img: "hot-chicken-sandwich.png",
+        item_line_time: "0"
+    },
+    {
+        item_name: 'COLESLAW PORTIONING',
+        item_desc: {
+            item_ing1: {
+                name: "Coleslaw",
+                qnt: "1 portion"
+            },
+            item_ing2: {
+                name: "Walk-in cooler Temp",
+                qnt: "0°C (32°F) to 4°C (40°F)"
+            },
+            item_ing3: {
+                name: "SHELF LIFE",
+                qnt: "1 Day"
+            }
+        },
+        item_img: "hot-chicken-sandwich.png",
+        item_line_time: "0"
+    },
+    {
+        item_name: 'CUCUMBER STICKS',
+        item_desc: {
+            item_ing1: {
+                name: "English Cucumber",
+                qnt: "As Needed"
+            },
+            item_ing2: {
+                name: "Walk-in cooler Temp",
+                qnt: "0°C (32°F) to 4°C (40°F)"
+            },
+            item_ing3: {
+                name: "SHELF LIFE",
+                qnt: "3 Days"
+            }
+        },
+        item_img: "hot-chicken-sandwich.png",
+        item_line_time: "0"
+    },
+    {
+        item_name: 'GARLIC GREEN BEANS - PORTIONING',
+        item_desc: {
+            item_ing1: {
+                name: "Garlic Green Beans, Frozen",
+                qnt: "5 oz (142 g)"
+            },
+            item_ing2: {
+                name: "Garlic Spread",
+                qnt: "0.7 oz (20 g)"
+            },
+            item_ing3: {
+                name: "Freezer Holding Temp",
+                qnt: "-18°C (0°F) or Lower"
+            },
+            item_ing4: {
+                name: "Walk-in cooler Temp",
+                qnt: "0°C (32°F) to 4°C (40°F)"
+            }
+        },
+        item_img: "hot-chicken-sandwich.png",
+        item_line_time: "0"
+    },
+    {
+        item_name: 'LEMON CHIPS',
+        item_desc: {
+            item_ing1: {
+                name: "Lemon",
+                qnt: "As Needed"
+            },
+            item_ing2: {
+                name: "Yield",
+                qnt: "1 Lemon, 32-40 chips"
+            },
+            item_ing3: {
+                name: "Walk-in cooler Temp",
+                qnt: "0°C (32°F) to 4°C (40°F)"
+            },
+            item_ing4: {
+                name: "SHELF LIFE",
+                qnt: "1 Day"
+            }
+        },
+        item_img: "hot-chicken-sandwich.png",
+        item_line_time: "0"
+    },
+    {
+        item_name: 'LEMON WEDGES',
+        item_desc: {
+            item_ing1: {
+                name: "Lemon",
+                qnt: "As Needed"
+            },
+            item_ing2: {
+                name: "Yield",
+                qnt: "1 Lemon, 8 wedges"
+            },
+            item_ing3: {
+                name: "Walk-in cooler Temp",
+                qnt: "0°C (32°F) to 4°C (40°F)"
+            },
+            item_ing4: {
+                name: "SHELF LIFE",
+                qnt: "1 Day"
+            }
+        },
+        item_img: "hot-chicken-sandwich.png",
+        item_line_time: "0"
+    },
+    {
+        item_name: 'LEMON WHEELS',
+        item_desc: {
+            item_ing1: {
+                name: "Lemon",
+                qnt: "As Needed"
+            },
+            item_ing2: {
+                name: "Yield",
+                qnt: "1 Lemon, 8 wheels"
+            },
+            item_ing3: {
+                name: "Walk-in cooler Temp",
+                qnt: "0°C (32°F) to 4°C (40°F)"
+            },
+            item_ing4: {
+                name: "SHELF LIFE",
+                qnt: "1 Day"
+            }
+        },
+        item_img: "hot-chicken-sandwich.png",
+        item_line_time: "0"
+    },
+    {
+        item_name: 'LETTUCE, PRE-CUT HANDLING',
+        item_desc: {
+            item_ing1: {
+                name: "50/50 Mix / Iceberg lettuce mix OR",
+                qnt: "1 Bag"
+            },
+            item_ing2: {
+                name: "Romaine Lettuce OR",
+                qnt: "1 Bag"
+            },
+            item_ing3: {
+                name: "Heritage Mix",
+                qnt: "1 Bag"
+            },
+            item_ing4: {
+                name: "Walk-in cooler Temp",
+                qnt: "0°C (32°F) to 4°C (40°F)1 Day"
+            },
+            item_ing5: {
+                name: "SHELF LIFE",
+                qnt: "2 Days Once Opened"
+            }
+        },
+        item_img: "hot-chicken-sandwich.png",
+        item_line_time: "0"
+    },
+    {
+        item_name: 'LEAF LETTUCE',
+        item_desc: {
+            item_ing1: {
+                name: "Leaf Lettuce",
+                qnt: "1 Head"
+            },
+            item_ing2: {
+                name: "Walk-in cooler Temp",
+                qnt: "0°C (32°F) to 4°C (40°F)"
+            },
+            item_ing3: {
+                name: "SHELF LIFE",
+                qnt: "2 Days Once Cut"
+            }
+        },
+        item_img: "hot-chicken-sandwich.png",
+        item_line_time: "0"
+    },
+    {
+        item_name: 'LIME WEDGES',
+        item_desc: {
+            item_ing1: {
+                name: "Limes",
+                qnt: "As Needed"
+            },
+            item_ing2: {
+                name: "Yield",
+                qnt: "1 Lime, 6 wedges"
+            },
+            item_ing3: {
+                name: "Walk-in cooler Temp",
+                qnt: "0°C (32°F) to 4°C (40°F)"
+            },
+            item_ing4: {
+                name: "SHELF LIFE",
+                qnt: "1 Day"
+            }
+        },
+        item_img: "hot-chicken-sandwich.png",
+        item_line_time: "0"
+    },
+    {
+        item_name: 'LIME WHEELS',
+        item_desc: {
+            item_ing1: {
+                name: "Limes",
+                qnt: "As Needed"
+            },
+            item_ing2: {
+                name: "Yield",
+                qnt: "1 Lime, 8 Wheels"
+            },
+            item_ing3: {
+                name: "Walk-in cooler Temp",
+                qnt: "0°C (32°F) to 4°C (40°F)"
+            },
+            item_ing4: {
+                name: "SHELF LIFE",
+                qnt: "1 Day"
+            }
+        },
+        item_img: "hot-chicken-sandwich.png",
+        item_line_time: "0"
+    },
+    {
+        item_name: 'MAYONNAISE GARLIC MESQUITE',
+        item_desc: {
+            item_ing1: {
+                name: "Garlic Mesquite Seasoning",
+                qnt: "1 oz (28 g)"
+            },
+            item_ing2: {
+                name: "Mayonnaise",
+                qnt: "24 fl oz (710 ml)"
+            },
+            item_ing3: {
+                name: "Water",
+                qnt: "5 fl oz (150 ml)"
+            },
+            item_ing4: {
+                name: "Yield",
+                qnt: "30 fl oz"
+            },
+            item_ing5: {
+                name: "Walk-In cooler Temp",
+                qnt: "0°C (32°F) to 4°C (40°F)"
+            },
+            item_ing6: {
+                name: "Shelf Life",
+                qnt: "5 Days"
+            }
+        },
+        item_img: "hot-chicken-sandwich.png",
+        item_line_time: "0"
+    },
+    {
+        item_name: 'MARKET VEGETABLES, PORTIONS',
+        item_desc: {
+            item_ing1: {
+                name: "Broccoli florets,prepped",
+                qnt: "2.5 oz (71 g)"
+            },
+            item_ing2: {
+                name: "Cauliflower florets, prepped",
+                qnt: "2.5 oz (71 g)"
+            },
+            item_ing3: {
+                name: "Red Bell Peppers, sliced, prepped",
+                qnt: "1 oz (28 g)"
+            },
+            item_ing4: {
+                name: "Yields",
+                qnt: "6 oz portion"
+            },
+            item_ing5: {
+                name: "Walk-in cooler Temp",
+                qnt: "0°C (32°F) to 4°C (40°F)"
+            },
+            item_ing6: {
+                name: "Shelf Life",
+                qnt: "3 Days Once Cut"
+            }
+        },
+        item_img: "hot-chicken-sandwich.png",
+        item_line_time: "0"
+    },
+    {
+        item_name: 'ONION GREEN SLICED',
+        item_desc: {
+            item_ing1: {
+                name: "Green Onions",
+                qnt: "As Needed"
+            },
+            item_ing2: {
+                name: "Walk-in cooler Temp",
+                qnt: "0°C (32°F) to 4°C (40°F)"
+            },
+            item_ing3: {
+                name: "SHELF LIFE",
+                qnt: "3 Days"
+            }
+        },
+        item_img: "hot-chicken-sandwich.png",
+        item_line_time: "0"
+    },
+    {
+        item_name: 'ONION RED JULIENNED',
+        item_desc: {
+            item_ing1: {
+                name: "Red Onions ",
+                qnt: "As Needed"
+            },
+            item_ing2: {
+                name: "Walk-in cooler Temp",
+                qnt: "0°C (32°F) to 4°C (40°F)"
+            },
+            item_ing3: {
+                name: "SHELF LIFE",
+                qnt: "3 Days"
+            }
+        },
+        item_img: "hot-chicken-sandwich.png",
+        item_line_time: "0"
+    },
+    {
+        item_name: 'ONION RED JULIENNED',
+        item_desc: {
+            item_ing1: {
+                name: "Red Onions ",
+                qnt: "As Needed"
+            },
+            item_ing2: {
+                name: "Walk-in cooler Temp",
+                qnt: "0°C (32°F) to 4°C (40°F)"
+            },
+            item_ing3: {
+                name: "SHELF LIFE",
+                qnt: "3 Days"
+            }
+        },
+        item_img: "hot-chicken-sandwich.png",
+        item_line_time: "0"
+    },
 ]
