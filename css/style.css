@@ -177,11 +177,25 @@
   color: #fff;
 }
 
-.home-page .row {
-  justify-content: center;
-  align-items: center;
+.navbar-home-page {
+  position: fixed;
+  width: 100%;
 }
-.home-page a {
+@media (max-width: 479px) {
+  .navbar-home-page .logo-container {
+    z-index: 100;
+    width: 100px;
+  }
+}
+
+.home-page {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+.home-page .row .tile a {
   background: #EE1D23;
   color: #fff;
   margin: 10px;
@@ -191,8 +205,10 @@
   text-align: center;
   padding: 10px;
   font-size: 18px;
+  font-weight: bold;
 }
-.home-page a:hover {
+.home-page .row .tile a:hover {
   background-color: transparent;
   border: 2px solid #EE1D23;
+  color: #EE1D23;
 }/*# sourceMappingURL=style.css.map */

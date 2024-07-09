@@ -218,27 +218,48 @@ $swiss-red: #EE1D23;
     } 
 }
 
+.navbar-home-page {
+    position: fixed;
+    width: 100%;
+
+    .logo-container {
+
+        @include phone {
+            z-index: 100;
+            width: 100px;
+        }
+    }
+}
+
 .home-page {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: -1;
 
     .row {
-        justify-content: center;
-        align-items: center;
-    }
 
-    a {
-        background: $swiss-red;
-        color: #fff;
-        margin: 10px;
-        border: none;
-        @include body-font;
-        text-align: center;
-        padding: 10px;
-        font-size: 18px;
+        .tile {
 
+            a {
+                background: $swiss-red;
+                color: #fff;
+                margin: 10px;
+                border: none;
+                @include body-font;
+                text-align: center;
+                padding: 10px;
+                font-size: 18px;
+                font-weight: bold;
+        
+                &:hover {
+                    background-color: transparent;
+                    border: 2px solid $swiss-red;
+                    color: $swiss-red;
+                }
 
-        &:hover {
-            background-color: transparent;
-            border: 2px solid $swiss-red;
+            }
         }
     }
 }
