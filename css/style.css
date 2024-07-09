@@ -175,4 +175,24 @@
 #recipe-card_modal #datatable thead {
   background-color: #EE1D23;
   color: #fff;
+}
+
+.home-page .row {
+  justify-content: center;
+  align-items: center;
+}
+.home-page a {
+  background: #EE1D23;
+  color: #fff;
+  margin: 10px;
+  border: none;
+  font-family: "Work Sans", sans-serif;
+  font-style: normal;
+  text-align: center;
+  padding: 10px;
+  font-size: 18px;
+}
+.home-page a:hover {
+  background-color: transparent;
+  border: 2px solid #EE1D23;
 }/*# sourceMappingURL=style.css.map */

@@ -1911,10 +1911,10 @@ let prep = [
         item_line_time: "0"
     },
     {
-        item_name: 'ONION RED JULIENNED',
+        item_name: 'ONION RED RINGS',
         item_desc: {
             item_ing1: {
-                name: "Red Onions ",
+                name: "Red Onions",
                 qnt: "As Needed"
             },
             item_ing2: {
@@ -1924,6 +1924,708 @@ let prep = [
             item_ing3: {
                 name: "SHELF LIFE",
                 qnt: "3 Days"
+            }
+        },
+        item_img: "hot-chicken-sandwich.png",
+        item_line_time: "0"
+    },
+    {
+        item_name: 'PEPPER ONION MIX',
+        item_desc: {
+            item_ing1: {
+                name: "Pepper & Onion Mix",
+                qnt: "As Needed"
+            },
+            item_ing2: {
+                name: "Walk-in cooler Temp",
+                qnt: "0°C (32°F) to 4°C (40°F)"
+            },
+            item_ing3: {
+                name: "SHELF LIFE",
+                qnt: "3 Days"
+            }
+        },
+        item_img: "hot-chicken-sandwich.png",
+        item_line_time: "0"
+    },
+    {
+        item_name: 'PEROGIES PORTIONING',
+        item_desc: {
+            item_ing1: {
+                name: "Perogies",
+                qnt: "2 Bags (2.5 lb / 1.14 kg)"
+            },
+            item_ing2: {
+                name: "Freezer Holding Temp",
+                qnt: "-18°C (0°F) or Lower"
+            },
+            item_ing3: {
+                name: "SHELF LIFE",
+                qnt: "3 Days"
+            }
+        },
+        item_img: "hot-chicken-sandwich.png",
+        item_line_time: "0"
+    },
+    {
+        item_name: 'CHICKEN POT PIE MIX, BATCH PREP',
+        item_desc: {
+            item_ing1: {
+                name: "Pot Pie Mix",
+                qnt: "1 bag (6 lbs / 2.7 KG)"
+            },
+            item_ing2: {
+                name: "Peeled Meat",
+                qnt: "24 oz (12 oz White Meat & 12 oz Dark Meat Combined)"
+            },
+            item_ing3: {
+                name: "Freezer holding temp",
+                qnt: "-18°C (0°F) or Lower"
+            },
+            item_ing4: {
+                name: "Walk-in Cooler Temp",
+                qnt: "0°C (32°F) to 4°C (40°F)"
+            },
+            item_ing5: {
+                name: "Shelf Life",
+                qnt: "Pot Pie Base only - 3 Days From Frozen Batch with Chicken - Date of Peeled Meat"
+            }
+        },
+        item_img: "hot-chicken-sandwich.png",
+        item_line_time: "0"
+    },
+    {
+        item_name: 'HEARTY VEGETABLE POT PIE MIX, BATCH PREP',
+        item_desc: {
+            item_ing1: {
+                name: "Pot Pie Mix",
+                qnt: "1 bag (6 lbs / 2.7 KG)"
+            },
+            item_ing2: {
+                name: "Sweet Potato, Diced",
+                qnt: "18 oz"
+            },
+            item_ing3: {
+                name: "Freezer holding temp",
+                qnt: "-18°C (0°F) or Lower"
+            },
+            item_ing4: {
+                name: "Walk-in Cooler Temp",
+                qnt: "0°C (32°F) to 4°C (40°F)"
+            },
+            item_ing5: {
+                name: "Shelf Life",
+                qnt: "Mix—3 Days From Frozen"
+            }
+        },
+        item_img: "hot-chicken-sandwich.png",
+        item_line_time: "0"
+    },
+    {
+        item_name: 'HEARTY VEGETABLE POT PIE PORTION PREP',
+        item_desc: {
+            item_ing1: {
+                name: "Pot Pie Mix, thawed",
+                qnt: "11 oz"
+            },
+            item_ing2: {
+                name: "Sweet Potato Fries, Prepped",
+                qnt: "2 oz"
+            },
+            item_ing3: {
+                name: "Freezer holding temp",
+                qnt: "-18°C (0°F) or Lower"
+            },
+            item_ing4: {
+                name: "Walk-in Cooler Temp",
+                qnt: "0°C (32°F) to 4°C (40°F)"
+            },
+            item_ing5: {
+                name: "Shelf Life",
+                qnt: "Mix—3 Days From Frozen"
+            }
+        },
+        item_img: "hot-chicken-sandwich.png",
+        item_line_time: "0"
+    },
+    {
+        item_name: 'PUFF PASTRY POT PIE TOPS',
+        item_desc: {
+            item_ing1: {
+                name: "Puff Pastry Sheets",
+                qnt: "As Needed"
+            },
+            item_ing2: {
+                name: "Bake Sheen",
+                qnt: "Covering the top"
+            },
+            item_ing3: {
+                name: "Freezer holding temp",
+                qnt: "-18°C (0°F) or Lower"
+            },
+            item_ing4: {
+                name: "Rational temp",
+                qnt: "218°C (425°F)"
+            },
+            item_ing5: {
+                name: "Shelf Life",
+                qnt: "1 Day"
+            }
+        },
+        item_img: "hot-chicken-sandwich.png",
+        item_line_time: "0"
+    },
+    {
+        item_name: 'CAJUN CHICKEN MIX BATCH PREP',
+        item_desc: {
+            item_ing1: {
+                name: "Peeled Rotisserie Chicken",
+                qnt: "18 oz (510 g) (60/40 split white/dark meat)"
+            },
+            item_ing2: {
+                name: "Cajun Spice",
+                qnt: "1 tsp (5 g)"
+            },
+            item_ing3: {
+                name: "Yield",
+                qnt: "5 Portions"
+            },
+            item_ing4: {
+                name: "Walk-in cooler Temp",
+                qnt: "0°C (32°F) to 4°C (40°F)"
+            },
+            item_ing5: {
+                name: "Shelf Life",
+                qnt: "Peeled Meat (3 days)"
+            }
+        },
+        item_img: "hot-chicken-sandwich.png",
+        item_line_time: "0"
+    },
+    {
+        item_name: 'QUESADILLA MIX BATCH PREP',
+        item_desc: {
+            item_ing1: {
+                name: "Green Onions, sliced",
+                qnt: "1.5 oz (42 g)"
+            },
+            item_ing2: {
+                name: "Cheese Shred Pub Mix",
+                qnt: "13 oz (368 g)"
+            },
+            item_ing3: {
+                name: "Diced Roma tomato (Drained)",
+                qnt: "13 oz (368 g)"
+            },
+            item_ing4: {
+                name: "Salt",
+                qnt: ".5 g (4 shakes from a salt shaker)"
+            },
+            item_ing5: {
+                name: "Pepper",
+                qnt: ".5 g (4 shakes from a pepper shaker)"
+            },
+            item_ing6: {
+                name: "Yield",
+                qnt: "5 Portions"
+            },
+            item_ing7: {
+                name: "Walk-in cooler Temp",
+                qnt: "0°C (32°F) to 4°C (40°F)"
+            },
+            item_ing8: {
+                name: "Shelf Life",
+                qnt: "1 Day"
+            }
+        },
+        item_img: "hot-chicken-sandwich.png",
+        item_line_time: "0"
+    },
+    {
+        item_name: 'CHICKEN QUESADILLA PREP',
+        item_desc: {
+            item_ing1: {
+                name: "Cajun Chicken Mix, Prepared",
+                qnt: "3.6 oz (102 g)"
+            },
+            item_ing2: {
+                name: "Quesadilla Mix Batch Prep",
+                qnt: "5.5 oz (156 g)"
+            },
+            item_ing3: {
+                name: "12” Tortilla Shell",
+                qnt: "1 each"
+            },
+            item_ing4: {
+                name: "Yield",
+                qnt: "1 each"
+            },
+            item_ing5: {
+                name: "Walk-in cooler Temp",
+                qnt: "0°C (32°F) to 4°C (40°F)"
+            },
+            item_ing6: {
+                name: "Shelf Life",
+                qnt: "1 Day"
+            }
+        },
+        item_img: "hot-chicken-sandwich.png",
+        item_line_time: "0"
+    },
+    {
+        item_name: 'CAJUN SWEET POTATO MIX BATCH PREP',
+        item_desc: {
+            item_ing1: {
+                name: "Sweet potato, thawed",
+                qnt: "12.5 oz (354 g)"
+            },
+            item_ing2: {
+                name: "Cajun Spice",
+                qnt: "1 tsp (5 g)"
+            },
+            item_ing3: {
+                name: "Yield",
+                qnt: "5 Portions"
+            },
+            item_ing4: {
+                name: "Walk-in cooler Temp",
+                qnt: "0°C (32°F) to 4°C (40°F)"
+            },
+            item_ing5: {
+                name: "Shelf Life",
+                qnt: "3 Days From Thaw"
+            }
+        },
+        item_img: "hot-chicken-sandwich.png",
+        item_line_time: "0"
+    },
+    {
+        item_name: 'VEGETABLE QUESADILLA MIX PREP',
+        item_desc: {
+            item_ing1: {
+                name: "Cajun Sweet Potato Mix, Prepared",
+                qnt: "2.6 oz (73 g)"
+            },
+            item_ing2: {
+                name: "Quesadilla Mix Batch Prep",
+                qnt: "5.4 oz (155 g)"
+            },
+            item_ing3: {
+                name: "12” Tortilla Shell",
+                qnt: "1 each"
+            },
+            item_ing4: {
+                name: "Yield",
+                qnt: "5 Portions"
+            },
+            item_ing5: {
+                name: "Walk-in cooler Temp",
+                qnt: "0°C (32°F) to 4°C (40°F)"
+            },
+            item_ing6: {
+                name: "Shelf Life",
+                qnt: "1 Day"
+            }
+        },
+        item_img: "hot-chicken-sandwich.png",
+        item_line_time: "0"
+    },
+    {
+        item_name: 'RICE PILAF, PORTIONING',
+        item_desc: {
+            item_ing1: {
+                name: "Rice, cooked",
+                qnt: "98.oz (6.1 lbs)"
+            },
+            item_ing2: {
+                name: "Tomatoes, diced, prepped",
+                qnt: "16 oz (454 g)"
+            },
+            item_ing3: {
+                name: "Green Onions, sliced, prepped",
+                qnt: "2 oz (57 g)"
+            },
+            item_ing4: {
+                name: "Yield",
+                qnt: "16 x 7 oz Portions"
+            },
+            item_ing5: {
+                name: "Walk-in cooler Temp",
+                qnt: "0°C (32°F) to 4°C (40°F)"
+            },
+            item_ing6: {
+                name: "Line Drawer Temp",
+                qnt: "0°C (32°F) to 4°C(40°F)"
+            },
+            item_ing7: {
+                name: "Shelf Life",
+                qnt: "3 Day"
+            }
+        },
+        item_img: "hot-chicken-sandwich.png",
+        item_line_time: "0"
+    },
+    {
+        item_name: 'SAUCE - CHALET BBQ',
+        item_desc: {
+            item_ing1: {
+                name: "Smoky BBQ Sauce",
+                qnt: "2 cups (473 mL)"
+            },
+            item_ing2: {
+                name: "Chalet Dipping Sauce, cooled",
+                qnt: "3 cups (709 mL)"
+            },
+            item_ing3: {
+                name: "Yield",
+                qnt: "5 Cups"
+            },
+            item_ing4: {
+                name: "Walk-in cooler Temp",
+                qnt: "0°C (32°F) to 4°C (40°F)"
+            },
+            item_ing5: {
+                name: "Shelf Life",
+                qnt: "5 Days"
+            }
+        },
+        item_img: "hot-chicken-sandwich.png",
+        item_line_time: "0"
+    },
+    {
+        item_name: 'SAUCE - HONEY BUFFALO',
+        item_desc: {
+            item_ing1: {
+                name: "Honey Garlic Sauce",
+                qnt: "4 cups"
+            },
+            item_ing2: {
+                name: "Medium Wing Sauce",
+                qnt: "4 cups"
+            },
+            item_ing3: {
+                name: "Yield",
+                qnt: "8 Cups"
+            },
+            item_ing4: {
+                name: "Walk-in cooler Temp",
+                qnt: "0°C (32°F) to 4°C (40°F)"
+            },
+            item_ing5: {
+                name: "Shelf Life",
+                qnt: "5 Days"
+            }
+        },
+        item_img: "hot-chicken-sandwich.png",
+        item_line_time: "0"
+    },
+    {
+        item_name: 'PULLED RIB MEAT PACK',
+        item_desc: {
+            item_ing1: {
+                name: "Pulled Rib Meat, cooled",
+                qnt: "4 oz (113 g)"
+            },
+            item_ing2: {
+                name: "Cold Holding Temp",
+                qnt: "0°C (32°F) to 4°C (40°F)"
+            },
+            item_ing3: {
+                name: "Shelf Life",
+                qnt: "Cooked Rib Expiry Date"
+            }
+        },
+        item_img: "hot-chicken-sandwich.png",
+        item_line_time: "0"
+    },
+    {
+        item_name: 'SOUR CREAM - CAJUN',
+        item_desc: {
+            item_ing1: {
+                name: "Sour Cream",
+                qnt: "30 fl oz (900 ml)"
+            },
+            item_ing2: {
+                name: "Mayonnaise",
+                qnt: "4 fl oz (120 ml)"
+            },
+            item_ing3: {
+                name: "Green Onions, sliced",
+                qnt: "1 1/2 oz (42 g)"
+            },
+            item_ing4: {
+                name: "Cajun Spice Mix",
+                qnt: "1 oz (28 g)"
+            },
+            item_ing5: {
+                name: "Yield",
+                qnt: "18 x 2 fl oz Portions"
+            },
+            item_ing6: {
+                name: "Walk-in cooler Temp",
+                qnt: "0°C (32°F) to 4°C(40°F)"
+            },
+            item_ing7: {
+                name: "Shelf Life",
+                qnt: "3 Days"
+            }
+        },
+        item_img: "hot-chicken-sandwich.png",
+        item_line_time: "0"
+    },
+    {
+        item_name: 'SOUTHERN CANUCK PACK',
+        item_desc: {
+            item_ing1: {
+                name: "Peeled Rotisserie Chicken",
+                qnt: "4.5 oz (126 g)"
+            },
+            item_ing2: {
+                name: "Smoky BBQ Sauce",
+                qnt: "3 fl oz"
+            },
+            item_ing3: {
+                name: "Cold Holding Temp",
+                qnt: "0°C (32°F) to 4°C (40°F)"
+            },
+            item_ing4: {
+                name: "SHELF LIFE",
+                qnt: "Follow expiry of Peeled meat"
+            }
+        },
+        item_img: "hot-chicken-sandwich.png",
+        item_line_time: "0"
+    },
+    {
+        item_name: 'SPRING ROLLS MIX',
+        item_desc: {
+            item_ing1: {
+                name: "Rotisserie Chicken, white meat",
+                qnt: "58 oz (1.6kg)"
+            },
+            item_ing2: {
+                name: "Rotisserie Chicken, dark meat",
+                qnt: "42 oz (1.2 kg)"
+            },
+            item_ing3: {
+                name: "Pepper & Onion Mix",
+                qnt: "16 oz (454 g)"
+            },
+            item_ing4: {
+                name: "Carrots, Shredded",
+                qnt: "16 oz (454 g)"
+            },
+            item_ing5: {
+                name: "Green Cabbage, shredded",
+                qnt: "16 oz (454 g)"
+            },
+            item_ing6: {
+                name: "Green Onion, sliced",
+                qnt: "4 oz (112 g)"
+            },
+            item_ing7: {
+                name: "Greek Seasoning",
+                qnt: "1 oz (28 g)"
+            },
+            item_ing8: {
+                name: "Teriyaki Sauce",
+                qnt: "12 fl oz (360 ml)"
+            },
+            item_ing9: {
+                name: "Shelf life",
+                qnt: "Same as Peeled chicken not prepped, Once prepped 2 weeks frozen"
+            },
+            item_ing10: {
+                name: "Yield",
+                qnt: "160 rolls or 40 Orders"
+            }
+        },
+        item_img: "hot-chicken-sandwich.png",
+        item_line_time: "0"
+    },
+    {
+        item_name: 'SPRING ROLLS',
+        item_desc: {
+            item_ing1: {
+                name: "SPRING ROLLS",
+                qnt: "1 oz (28 g)"
+            },
+            item_ing2: {
+                name: "Spring Roll Wrapper",
+                qnt: "1 Each"
+            },
+            item_ing3: {
+                name: "Yield Batch",
+                qnt: "160 Rolls or 40 Orders"
+            },
+            item_ing4: {
+                name: "Freezer Holding Temp",
+                qnt: "-18°C (0°F) or Lower"
+            },
+            item_ing5: {
+                name: "Shelf Life",
+                qnt: "2 Weeks frozen"
+            }
+        },
+        item_img: "hot-chicken-sandwich.png",
+        item_line_time: "0"
+    },
+    {
+        item_name: 'STIR FRY VEGETABLE PACK, PORTIONING',
+        item_desc: {
+            item_ing1: {
+                name: "Broccoli, Cut florets",
+                qnt: "3.5 oz (100 g)"
+            },
+            item_ing2: {
+                name: "Red Pepper, Julienned",
+                qnt: "2 oz (58 g)"
+            },
+            item_ing3: {
+                name: "Red Onions, Julienne",
+                qnt: "1.5 oz (44 g)"
+            },
+            item_ing4: {
+                name: "Carrots, Julienne",
+                qnt: "1.5 oz (44 g)"
+            },
+            item_ing5: {
+                name: "Yield",
+                qnt: "1 Portion"
+            },
+            item_ing6: {
+                name: "Walk-in cooler Temp",
+                qnt: "0°C (32°F) to 4°C (40°F)"
+            },
+            item_ing7: {
+                name: "Line Drawer Temp",
+                qnt: "0°C (32°F) to 4°C(40°F)"
+            },
+            item_ing8: {
+                name: "SHELF LIFE",
+                qnt: "3 Day "
+            }
+        },
+        item_img: "hot-chicken-sandwich.png",
+        item_line_time: "0"
+    },
+    {
+        item_name: 'SWEET POTATO FRIES PORTIONING',
+        item_desc: {
+            item_ing1: {
+                name: "Sweet Potato Fries, Frozen",
+                qnt: "8 oz (226 g)"
+            },
+            item_ing2: {
+                name: "Freezer Holding Temp",
+                qnt: "-18°C (0°F) or Lower"
+            }
+        },
+        item_img: "hot-chicken-sandwich.png",
+        item_line_time: "0"
+    },
+    {
+        item_name: 'SWEET POTATO THAW',
+        item_desc: {
+            item_ing1: {
+                name: "Sweet Potato, frozen",
+                qnt: "12.5 oz (354 g)"
+            },
+            item_ing2: {
+                name: "Yield",
+                qnt: "5 Portions"
+            },
+            item_ing3: {
+                name: "Walk-in cooler Temp",
+                qnt: "0°C (32°F) to 4°C (40°F)"
+            },
+            item_ing4: {
+                name: "SHELF LIFE",
+                qnt: "12 hours thaw"
+            }
+        },
+        item_img: "hot-chicken-sandwich.png",
+        item_line_time: "0"
+    },
+    {
+        item_name: 'ROMA TOMATOES SLICED (FOR CLUB WRAP)',
+        item_desc: {
+            item_ing1: {
+                name: "Roma Tomatoes",
+                qnt: "As Needed"
+            },
+            item_ing2: {
+                name: "Yield",
+                qnt: "1 tomato = 6 slices"
+            },
+            item_ing3: {
+                name: "Walk-in cooler Temp",
+                qnt: "0°C (32°F) to 4°C (40°F)"
+            },
+            item_ing4: {
+                name: "SHELF LIFE",
+                qnt: "1 Day"
+            }
+        },
+        item_img: "hot-chicken-sandwich.png",
+        item_line_time: "0"
+    },
+    {
+        item_name: 'ROMA TOMATOES WEDGES',
+        item_desc: {
+            item_ing1: {
+                name: "Roma Tomatoes",
+                qnt: "As Needed"
+            },
+            item_ing2: {
+                name: "Yield",
+                qnt: "1 tomato = 6 wedges"
+            },
+            item_ing3: {
+                name: "Walk-in cooler Temp",
+                qnt: "0°C (32°F) to 4°C (40°F)"
+            },
+            item_ing4: {
+                name: "SHELF LIFE",
+                qnt: "1 Day"
+            }
+        },
+        item_img: "hot-chicken-sandwich.png",
+        item_line_time: "0"
+    },
+    {
+        item_name: 'ROMA TOMATOES DICED',
+        item_desc: {
+            item_ing1: {
+                name: "Roma Tomatoes",
+                qnt: "As Needed"
+            },
+            item_ing2: {
+                name: "Walk-in cooler Temp",
+                qnt: "0°C (32°F) to 4°C (40°F)"
+            },
+            item_ing3: {
+                name: "SHELF LIFE",
+                qnt: "1 Day"
+            }
+        },
+        item_img: "hot-chicken-sandwich.png",
+        item_line_time: "0"
+    },
+    {
+        item_name: 'ONION RINGS - PORTIONING',
+        item_desc: {
+            item_ing1: {
+                name: "Onion Rings",
+                qnt: "5 oz (140 g)"
+            },
+            item_ing2: {
+                name: "Case Yields",
+                qnt: "28 x 5 oz portions"
+            },
+            item_ing3: {
+                name: "Freezer Temp",
+                qnt: "-18°C (0°F) or Lower"
             }
         },
         item_img: "hot-chicken-sandwich.png",

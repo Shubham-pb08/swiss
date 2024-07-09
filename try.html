@@ -22,11 +22,64 @@
 
     <script>
 
+        let container = document.querySelector('.container');
+        let elem = '';
+
+        let data = [
+            [
+                {
+                    name: "pot pie",
+                    desc: {ing1:{name: "pot pie",qnt: 10},ing2:{name: "pot pie",qnt: 10},ing3:{name: "pot pie",qnt: 10}}
+                },
+                {
+                    name: "another thing",
+                    desc: {ing1:{name: "thing 2",qnt: 10},ing2:{name: "thing 2",qnt: 10},ing3:{name: "thing 2",qnt: 10}}
+                },
+                {
+                    name: "pot pie",
+                    desc: {ing1:{name: "thing 3",qnt: 10},ing2:{name: "thing 3",qnt: 10},ing3:{name: "thing 3",qnt: 10}}
+                }
+            ]
+            ,
+            [
+                {
+                    name: "crispy sandwich",
+                    desc: {ing1:{name: "sandwich",qnt: 10},ing2:{name: "sandwich",qnt: 10},ing3:{name: "sandwich",qnt: 10}}
+                },
+                {
+                    name: "another sandwich",
+                    desc: {ing1:{name: "sandwich 2",qnt: 10},ing2:{name: "sandwich 2",qnt: 10},ing3:{name: "sandwich 2",qnt: 10}}
+                },
+                {
+                    name: "sandwich 3",
+                    desc: {ing1:{name: "sandwich 3",qnt: 10},ing2:{name: "sandwich 3",qnt: 10},ing3:{name: "sandwich 3",qnt: 10}}
+                }
+            ]
+        ]
+
         
-        for (let a in recipes[0]) {
-            for (let i in `recipes[0].${a}`) {
-                console.log(recipes[0]);
-            }   
+        // console.log(data);
+        for (let a in data) {
+
+            console.log("data[a] ",data[a]);
+
+            for (let b in data[a]) {
+
+                console.log("data[a][b].name ",data[a][b].name);
+
+                for (let c in data[a][b].desc) {
+                    console.log("data[a][b].desc[c].qnt ", data[a][b].desc[c].qnt);
+                    
+                    elem += `
+                        <div class="card">
+                            <h1 class="head">${data[a][b].name}</h1>
+                            <p class="text">something</p>
+                        </div>
+                        `;
+                        
+                    }
+                }
+                container.innerHTML = elem;
         }
 
     </script>

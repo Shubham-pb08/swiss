@@ -217,3 +217,28 @@ $swiss-red: #EE1D23;
         }
     } 
 }
+
+.home-page {
+
+    .row {
+        justify-content: center;
+        align-items: center;
+    }
+
+    a {
+        background: $swiss-red;
+        color: #fff;
+        margin: 10px;
+        border: none;
+        @include body-font;
+        text-align: center;
+        padding: 10px;
+        font-size: 18px;
+
+
+        &:hover {
+            background-color: transparent;
+            border: 2px solid $swiss-red;
+        }
+    }
+}
